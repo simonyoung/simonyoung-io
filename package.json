@@ -1,0 +1,17 @@
+{
+  "name": "simonyoung.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Simon Young <simon180@mac.com>",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^9.2.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  }
+}
