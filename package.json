@@ -15,7 +15,8 @@
     "build": "next build",
     "start": "next start",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "lint": "eslint"
   },
   "devDependencies": {
     "@babel/core": "^7.8.3",
@@ -24,6 +25,10 @@
     "@storybook/addons": "^5.3.6",
     "@storybook/react": "^5.3.6",
     "babel-loader": "^8.0.6",
-    "babel-plugin-styled-components": "^1.10.6"
+    "babel-plugin-styled-components": "^1.10.6",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-react": "^7.18.0",
+    "prettier": "^1.19.1"
   }
 }
