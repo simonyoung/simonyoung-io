@@ -13,9 +13,17 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@storybook/addon-actions": "^5.3.6",
+    "@storybook/addon-links": "^5.3.6",
+    "@storybook/addons": "^5.3.6",
+    "@storybook/react": "^5.3.6",
+    "babel-loader": "^8.0.6",
     "babel-plugin-styled-components": "^1.10.6"
   }
 }
