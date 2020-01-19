@@ -1,12 +1,20 @@
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 
-const Layout = props => (
-  <div>
-    <Header />
-    {props.children}
-    <Footer />
-  </div>
-);
+const layoutStyle = {
+  margin: 20,
+  padding: 20,
+  border: '1px solid #DDD'
+};
 
-export default Layout;
+const withLayout = Page => {
+  return () => (
+    <div style={layoutStyle}>
+      <Header />
+      <Page />
+      <Footer />
+    </div>
+  );
+};
+
+export default withLayout;

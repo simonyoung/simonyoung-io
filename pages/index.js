@@ -1,10 +1,6 @@
-import Layout from '../components/Layout';
+import withLayout from '../components/Layout';
 import HelloWorld from '../components/HelloWorld';
 
-export default () => (
-  <div>
-    <Layout>
-      <HelloWorld />
-    </Layout>
-  </div>
-)
+const Page = () => <HelloWorld />;
+
+export default withLayout(Page);
