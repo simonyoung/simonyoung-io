@@ -1,7 +1,10 @@
-import HelloWorld from '../components'
+import Layout from '../components/Layout';
+import HelloWorld from '../components/HelloWorld';
+
 export default () => (
   <div>
-    <h1>Simon Young</h1>
-    <HelloWorld />
+    <Layout>
+      <HelloWorld />
+    </Layout>
   </div>
 )
