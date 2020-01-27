@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import matter from 'gray-matter';
+
 import ReactMarkdown from 'react-markdown';
 import Moment from 'react-moment';
 

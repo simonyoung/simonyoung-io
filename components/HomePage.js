@@ -16,9 +16,7 @@ export default function Posts() {
   return (
     <div>
       <ul>
-        <PostLink id="hello-nextjs" />
-        <PostLink id="learn-nextjs" />
-        <PostLink id="deploy-nextjs" />
+        <PostLink id="the-empire-strikes-back" />
       </ul>
     </div>
   );
