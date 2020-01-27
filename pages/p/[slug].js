@@ -4,11 +4,11 @@ import ReactMarkdown from 'react-markdown';
 import Layout from '../../components/Layout';
 import Post from '../../components/Post';
 
-const PostPage = ({ siteTitle, data }) => {
+const PostPage = ({ siteTitle, data, content }) => {
   console.log(data);
   return (
     <Layout>
-      <Post title={siteTitle} data={data} />
+      <Post title={siteTitle} data={data} content={content} />
     </Layout>
   );
 };
@@ -16,15 +16,19 @@ const PostPage = ({ siteTitle, data }) => {
 PostPage.getInitialProps = async function(context) {
   // context contains the query paraameter
   const { slug } = context.query;
+
   // get the file in the post dir based on the slug
   const content = await import(`../../data/posts/${slug}.md`);
+  //console.log(content);
+
   // also get the config
   const config = await import(`../../data/config.json`);
-  console.log(content);
+
   // gray-matter parses the yaml frontmatter from the markdown
   const data = matter(content.default);
   return {
     siteTitle: config.title,
+    ...content,
     ...data
   };
 };
