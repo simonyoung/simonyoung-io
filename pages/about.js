@@ -1,5 +1,11 @@
-function AboutPage() {
-  return <h1>About Simon</h1>;
-}
+import Layout from '../components/Layout';
+import About from '../components/About';
+
+const AboutPage = () => (
+  <Layout>
+    <About />
+  </Layout>
+);
+//About.getInitialProps = () => {}
 
 export default AboutPage;

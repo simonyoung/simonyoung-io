@@ -12,7 +12,7 @@ const PostLink = props => (
   </li>
 );
 
-export default function Blog() {
+export default function Posts() {
   return (
     <div>
       <ul>

@@ -1,6 +1,11 @@
-import withLayout from '../components/Layout';
-import HelloWorld from '../components/HelloWorld';
+import Layout from '../components/Layout';
+import HomePage from '../components/HomePage';
 
-const Page = () => <HelloWorld />;
+const Index = () => (
+  <Layout>
+    <HomePage />
+  </Layout>
+);
+//About.getInitialProps = () => {}
 
-export default withLayout(Page);
+export default Index;

@@ -4,17 +4,15 @@ import Footer from './Footer/Footer';
 const layoutStyle = {
   margin: 20,
   padding: 20,
-  border: '1px solid #DDD'
+  border: '2px solid #DDD'
 };
 
-const withLayout = Page => {
-  return () => (
-    <div style={layoutStyle}>
-      <Header />
-      <Page />
-      <Footer />
-    </div>
-  );
-};
+const Layout = ({ children }) => (
+  <div style={layoutStyle}>
+    <Header />
+    {children}
+    <Footer />
+  </div>
+);
 
-export default withLayout;
+export default Layout;

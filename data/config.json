@@ -1,0 +1,15 @@
+{
+  "title": "Simon Young",
+  "description": "Test Blog with Next.js.",
+  "contact": {
+    "website_url": "https://simonyoung.io",
+    "made_with_url": "https://nextjs.org",
+    "email": "simon180@mac.com",
+    "twitter_handle": "@simonyoung",
+    "twitter_url": "https://twitter.com/simonyoung",
+    "github_handle": "simonyoung",
+    "github_url": "https://github.com/simonyoung"
+  },
+  "primary_color": "#AEC4BE",
+  "repository_url": "https://github.com/simonyoung/simonyoung.io"
+}
