@@ -1,5 +1,6 @@
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
+import Head from 'next/head';
 
 const layoutStyle = {
   margin: 20,
@@ -9,6 +10,9 @@ const layoutStyle = {
 
 const Layout = ({ children }) => (
   <div style={layoutStyle}>
+    <Head>
+      <title>Sample Header CHANGE ME</title>
+    </Head>
     <Header />
     {children}
     <Footer />

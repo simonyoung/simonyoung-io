@@ -3,11 +3,7 @@ import Layout from '../../components/Layout';
 import Post from '../../components/Post';
 
 const PostPage = ({ siteTitle, data, content }) => {
-  return (
-    <Layout>
-      <Post title={siteTitle} data={data} content={content} />
-    </Layout>
-  );
+  return <Post title={siteTitle} data={data} content={content} />;
 };
 
 PostPage.getInitialProps = async function(context) {

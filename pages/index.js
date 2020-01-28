@@ -3,9 +3,7 @@ import Layout from '../components/Layout';
 import HomePage from '../components/HomePage';
 
 const Index = ({ siteConfig, allBlogs }) => (
-  <Layout>
-    <HomePage allBlogs={allBlogs} siteConfig={siteConfig} />
-  </Layout>
+  <HomePage allBlogs={allBlogs} siteConfig={siteConfig} />
 );
 
 // src/pages/index.js
