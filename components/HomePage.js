@@ -11,13 +11,28 @@ const PostLink = props => (
     </Link>
   </li>
 );
-
+/*
 export default function Posts() {
   return (
-    <div>
-      <ul>
+    <>
+      <ul className="list">
         <PostLink id="the-empire-strikes-back" />
       </ul>
-    </div>
+    </>
   );
 }
+*/
+
+export default ({ allBlogs, siteConfig }) => {
+  console.log(allBlogs);
+
+  return (
+    <>
+      <ul className="list">
+        <PostLink id="a-new-hope" />
+        <PostLink id="the-empire-strikes-back" />
+        <PostLink id="return-of-the-jedi" />
+      </ul>
+    </>
+  );
+};
