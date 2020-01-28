@@ -5,7 +5,7 @@ import Moment from 'react-moment';
 
 export default ({ title, data, content }) => {
   const markdownBody = content;
-  console.log(markdownBody);
+
   return (
     <div>
       <h1>{data.title}</h1>

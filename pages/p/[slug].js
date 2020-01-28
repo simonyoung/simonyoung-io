@@ -14,12 +14,11 @@ PostPage.getInitialProps = async function(context) {
   // context contains the query paraameter
   const { slug } = context.query;
 
-  // get the file in the post dir based on the slug
+  // retrieve post data and parse yaml front matter
   const content = await import(`../../data/posts/${slug}.md`);
-  // gray-matter parses the yaml frontmatter from the markdown
   const data = matter(content.default);
 
-  // also get the config
+  //retrieve core site config
   const siteConfig = await import(`../../data/config.json`);
 
   return {
