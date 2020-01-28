@@ -29,9 +29,10 @@ export default ({ allBlogs, siteConfig }) => {
   return (
     <>
       <ul className="list">
-        <PostLink id="a-new-hope" />
-        <PostLink id="the-empire-strikes-back" />
-        <PostLink id="return-of-the-jedi" />
+        {allBlogs &&
+          allBlogs.map((blog, index) => (
+            <PostLink key={`${blog.slug}-${index}`} id={blog.slug} />
+          ))}
       </ul>
     </>
   );
