@@ -1,4 +1,14 @@
 {
   "presets": ["next/babel"],
-  "plugins": ["react-require"]
+  "plugins": [
+    ["react-require"],
+    [
+      "styled-components",
+      {
+        "ssr": true,
+        "displayName": true,
+        "preprocess": false
+      }
+    ]
+  ]
 }

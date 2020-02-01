@@ -1,22 +1,25 @@
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import Head from 'next/head';
+import styled from 'styled-components';
 
-const layoutStyle = {
-  margin: 20,
-  padding: 20,
-  border: '2px solid #DDD'
-};
+const Container = styled.div`
+  width: 960px;
+  height: 100vh;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #f2f2f2;
+`;
 
 const Layout = ({ children }) => (
-  <div style={layoutStyle}>
+  <Container>
     <Head>
       <title>Sample Header CHANGE ME</title>
     </Head>
     <Header />
     {children}
     <Footer />
-  </div>
+  </Container>
 );
 
 export default Layout;
