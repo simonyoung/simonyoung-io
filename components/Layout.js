@@ -2,6 +2,9 @@ import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import Head from 'next/head';
 import styled from 'styled-components';
+import { makeStyles } from '@material-ui/core/styles';
+
+import Paper from '@material-ui/core/Paper';
 
 const Container = styled.div`
   width: 960px;
@@ -13,12 +16,14 @@ const Container = styled.div`
 
 const Layout = ({ children }) => (
   <Container>
-    <Head>
-      <title>Sample Header CHANGE ME</title>
-    </Head>
-    <Header />
-    {children}
-    <Footer />
+    <Paper>
+      <Head>
+        <title>Sample Header CHANGE ME</title>
+      </Head>
+      <Header />
+      {children}
+      <Footer />
+    </Paper>
   </Container>
 );
 
