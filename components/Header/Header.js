@@ -25,21 +25,31 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const Header = () => (
-  <div>
-    <Typography component="h1" variant="h5" color="inherit" align="left" noWrap>
-      Simon Young
-    </Typography>
+const Header = () => {
+  const classes = useStyles();
 
-    <Toolbar component="nav" variant="dense">
-      <Link href="/">
-        <a style={linkStyle}>Home</a>
-      </Link>
-      <Link href="/about">
-        <a style={linkStyle}>About</a>
-      </Link>
-    </Toolbar>
-  </div>
-);
+  return (
+    <div>
+      <Typography
+        component="h1"
+        variant="h5"
+        color="inherit"
+        align="left"
+        noWrap
+      >
+        Simon Young
+      </Typography>
+
+      <Toolbar component="nav" variant="dense">
+        <Link href="/">
+          <a style={linkStyle}>Home</a>
+        </Link>
+        <Link href="/about">
+          <a style={linkStyle}>About</a>
+        </Link>
+      </Toolbar>
+    </div>
+  );
+};
 
 export default Header;
