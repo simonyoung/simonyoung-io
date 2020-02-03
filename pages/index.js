@@ -1,5 +1,4 @@
 import matter from 'gray-matter';
-import Layout from '../components/Layout';
 import HomePage from '../components/HomePage';
 import styled from 'styled-components';
 

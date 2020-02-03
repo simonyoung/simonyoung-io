@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 import { ThemeProvider } from 'styled-components';
 
 const theme = {
-  primary: 'green'
+  primary: 'black'
 };
 
 class MyApp extends App {

@@ -1,12 +1,9 @@
 import Link from 'next/link';
 import styled from 'styled-components';
 import { makeStyles } from '@material-ui/core/styles';
+
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-
-const linkStyle = {
-  marginRight: 15
-};
 
 const useStyles = makeStyles(theme => ({
   toolbar: {
@@ -29,26 +26,33 @@ const Header = () => {
   const classes = useStyles();
 
   return (
-    <div>
-      <Typography
-        component="h1"
-        variant="h5"
-        color="inherit"
-        align="left"
-        noWrap
-      >
-        Simon Young
-      </Typography>
+    <React.Fragment>
+      <Toolbar className={classes.toolbar}>
+        <Typography
+          component="h2"
+          variant="h5"
+          color="inherit"
+          align="center"
+          noWrap
+          className={classes.toolbarTitle}
+        >
+          Simon Young
+        </Typography>
+      </Toolbar>
 
-      <Toolbar component="nav" variant="dense">
+      <Toolbar
+        component="nav"
+        variant="dense"
+        className={classes.toolbarSecondary}
+      >
         <Link href="/">
-          <a style={linkStyle}>Home</a>
+          <a>Home</a>
         </Link>
         <Link href="/about">
-          <a style={linkStyle}>About</a>
+          <a>About</a>
         </Link>
       </Toolbar>
-    </div>
+    </React.Fragment>
   );
 };
 
