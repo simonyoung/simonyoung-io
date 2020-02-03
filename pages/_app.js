@@ -1,10 +1,15 @@
 import React from 'react';
 import App from 'next/app';
 import Layout from '../components/Layout';
-import { ThemeProvider } from 'styled-components';
+import { ThemeProvider as StyledThemeProvider } from 'styled-components';
+import {
+  ThemeProvider as MaterialThemeProvider,
+  createMuiTheme
+} from '@material-ui/core/styles';
 
 const theme = {
-  primary: 'black'
+  primary: '#f2f2f2',
+  ...createMuiTheme()
 };
 
 class MyApp extends App {
@@ -17,12 +22,15 @@ class MyApp extends App {
 
   render() {
     const { Component, pageProps } = this.props;
+
     return (
-      <ThemeProvider theme={theme}>
-        <Layout>
-          <Component {...pageProps}></Component>
-        </Layout>
-      </ThemeProvider>
+      <StyledThemeProvider theme={theme}>
+        <MaterialThemeProvider theme={theme}>
+          <Layout>
+            <Component {...pageProps}></Component>
+          </Layout>
+        </MaterialThemeProvider>
+      </StyledThemeProvider>
     );
   }
 }

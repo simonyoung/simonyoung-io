@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import styled from 'styled-components';
 import { makeStyles } from '@material-ui/core/styles';
-
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 
