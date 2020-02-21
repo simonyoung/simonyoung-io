@@ -1,8 +1,6 @@
 import Link from 'next/link';
 import styled from 'styled-components';
-import { makeStyles } from '@material-ui/core/styles';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
+import { makeStyles, Container, Toolbar, Typography } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
   toolbar: {
@@ -39,18 +37,26 @@ const Header = () => {
         </Typography>
       </Toolbar>
 
-      <Toolbar
-        component="nav"
-        variant="dense"
-        className={classes.toolbarSecondary}
-      >
-        <Link href="/">
-          <a>Home</a>
-        </Link>
-        <Link href="/about">
-          <a>About</a>
-        </Link>
-      </Toolbar>
+      <Container maxWidth="xs">
+        <Toolbar
+          component="nav"
+          variant="dense"
+          className={classes.toolbarSecondary}
+        >
+          <Link href="/">
+            <a>Home</a>
+          </Link>
+          <Link href="/feed">
+            <a>Feed</a>
+          </Link>
+          <Link href="/about">
+            <a>About</a>
+          </Link>
+          <Link href="/speaking">
+            <a>Speaking</a>
+          </Link>
+        </Toolbar>
+      </Container>
     </React.Fragment>
   );
 };

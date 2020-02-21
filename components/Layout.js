@@ -24,8 +24,12 @@ const Layout = ({ children }) => {
       <CssBaseline />
       <Head>
         <title>Sample Header CHANGE ME</title>
+        <link
+          href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,800"
+          rel="stylesheet"
+        />
       </Head>
-      <Container maxWidth="lg">
+      <Container maxWidth="md">
         <Header />
         {children}
       </Container>

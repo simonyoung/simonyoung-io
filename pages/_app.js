@@ -9,6 +9,13 @@ import {
 
 const theme = {
   primary: '#f2f2f2',
+  typography: {
+    fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+    fontSize: 14,
+    fontWeightLight: 300,
+    fontWeightRegular: 400,
+    fontWeightMedium: 500
+  },
   ...createMuiTheme()
 };
 
