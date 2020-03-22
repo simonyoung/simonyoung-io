@@ -1,6 +1,5 @@
 import matter from 'gray-matter';
 import HomePage from '../components/HomePage';
-import styled from 'styled-components';
 
 const Index = ({ siteConfig, allBlogs }) => (
   <HomePage allBlogs={allBlogs} siteConfig={siteConfig} />

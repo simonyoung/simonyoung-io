@@ -1,39 +1,22 @@
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import Head from 'next/head';
-import styled from 'styled-components';
-import { makeStyles } from '@material-ui/core/styles';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Container from '@material-ui/core/Container';
-import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
-import Divider from '@material-ui/core/Divider';
-
-const useStyles = makeStyles(theme => ({
-  markdown: {
-    ...theme.typography.body2,
-    padding: theme.spacing(3, 0)
-  }
-}));
 
 const Layout = ({ children }) => {
-  const classes = useStyles();
-
   return (
     <React.Fragment>
-      <CssBaseline />
       <Head>
-        <title>Sample Header CHANGE ME</title>
+        <title>Simon Young</title>
         <link
           href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,800"
           rel="stylesheet"
         />
       </Head>
-      <Container maxWidth="md">
+      <div className="max-w-4xl mx-auto md:pt-32">
         <Header />
         {children}
-      </Container>
-      <Footer />
+        <Footer />
+      </div>
     </React.Fragment>
   );
 };
