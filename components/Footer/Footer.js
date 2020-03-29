@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
-    <footer className="hidden md:block p-2">
-      <p className="text-sm text-center">
+    <footer className="">
+      <p className="">
         {'Copyright © Simon Young, '}
         {new Date().getFullYear()}
         {'.'}

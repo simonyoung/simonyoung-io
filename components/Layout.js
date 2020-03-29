@@ -8,15 +8,13 @@ const Layout = ({ children }) => {
       <Head>
         <title>Simon Young</title>
         <link
-          href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,800"
+          href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
           rel="stylesheet"
         />
       </Head>
-      <div className="max-w-4xl mx-auto md:pt-32">
-        <Header />
-        {children}
-        <Footer />
-      </div>
+      <Header />
+      {children}
+      <Footer />
     </React.Fragment>
   );
 };
