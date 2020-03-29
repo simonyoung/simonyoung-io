@@ -3,20 +3,22 @@ import Link from 'next/link';
 const PostLink = props => (
   <li>
     <Link href="/p/[id]" as={`/p/${props.id}`}>
-      <a>{props.id}</a>
+      <a>{props.title}</a>
     </Link>
   </li>
 );
 
-export default ({ allBlogs, siteConfig }) => {
-  console.log(allBlogs);
-
+export default ({ allPosts, siteConfig }) => {
   return (
     <>
       <ul className="list">
-        {allBlogs &&
-          allBlogs.map((blog, index) => (
-            <PostLink key={`${blog.slug}-${index}`} id={blog.slug} />
+        {allPosts &&
+          allPosts.map((blog, index) => (
+            <PostLink
+              key={`${blog.fields.url}-${index}`}
+              id={blog.fields.url}
+              title={blog.fields.title}
+            />
           ))}
       </ul>
     </>

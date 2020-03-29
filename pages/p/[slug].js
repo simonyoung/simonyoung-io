@@ -1,27 +1,32 @@
-import matter from 'gray-matter';
-
+import fetch from 'node-fetch';
 import Post from '../../components/Post';
 
-const PostPage = ({ siteTitle, data, content }) => {
-  return <Post title={siteTitle} data={data} content={content} />;
+const PostPage = ({ siteTitle, data }) => {
+  return <Post title={siteTitle} data={data} />;
 };
 
-PostPage.getInitialProps = async function(context) {
-  // context contains the query paraameter
-  const { slug } = context.query;
+export async function getStaticPaths() {
+  const res = await fetch(`http://localhost:3000/api/posts`);
+  const posts = await res.json();
 
-  // retrieve post data and parse yaml front matter
-  const content = await import(`../../data/posts/${slug}.md`);
-  const data = matter(content.default);
+  const paths = posts.map(post => ({
+    params: { slug: post.fields.url }
+  }));
 
-  //retrieve core site config
+  return { paths, fallback: false };
+}
+
+export async function getStaticProps({ params }) {
   const siteConfig = await import(`../../data/config.json`);
+  const res = await fetch(`http://localhost:3000/api/post/${params.slug}`);
+  const data = await res.json();
 
   return {
-    siteTitle: siteConfig.title,
-    ...content,
-    ...data
+    props: {
+      siteTitle: siteConfig.title,
+      data: data
+    }
   };
-};
+}
 
 export default PostPage;
