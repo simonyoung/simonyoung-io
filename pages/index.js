@@ -7,7 +7,7 @@ const Index = ({ siteConfig, allPosts }) => (
 
 export async function getStaticProps() {
   const siteConfig = await import(`../data/config.json`);
-  const res = await fetch(process.env.NOW_URL + `/api/posts`);
+  const res = await fetch(process.env.API_BASE_URL + `/api/posts`);
   const posts = await res.json();
 
   return {
