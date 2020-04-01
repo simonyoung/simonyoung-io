@@ -1,6 +1,5 @@
-import fetch from 'node-fetch';
-import HomePage from '../components/HomePage';
 import { getContent } from '../helpers/contentful';
+import HomePage from '../components/HomePage';
 
 const Index = ({ siteConfig, allPosts }) => (
   <HomePage allPosts={allPosts} siteConfig={siteConfig} />
