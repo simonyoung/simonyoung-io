@@ -1,8 +1,8 @@
 import { ContentfulClientApi, createClient, getEntries } from 'contentful';
 
 const client = createClient({
-  space: process.env.CONTENTFUL_SPACE_ID,
-  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
+  space: process.env.contentful_space_id,
+  accessToken: process.env.contentful_access_token
 });
 
 export const getContent = async content_type => {
