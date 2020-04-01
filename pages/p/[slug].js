@@ -1,13 +1,13 @@
 import fetch from 'node-fetch';
 import Post from '../../components/Post';
+import { getContent, getContentBySlug } from '../../helpers/contentful';
 
 const PostPage = ({ siteTitle, data }) => {
   return <Post title={siteTitle} data={data} />;
 };
 
 export async function getStaticPaths() {
-  const res = await fetch(`https://simonyoung-io.now.sh/api/posts`);
-  const posts = await res.json();
+  const posts = await getContent(process.env.CONTENTFUL_BLOG_CONTENT_TYPE);
 
   const paths = posts.map(post => ({
     params: { slug: post.fields.url }
@@ -18,10 +18,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const siteConfig = await import(`../../data/config.json`);
-  const res = await fetch(
-    `https://simonyoung-io.now.sh/api/post/${params.slug}`
-  );
-  const data = await res.json();
+  const data = await getContentBySlug(params.slug);
 
   return {
     props: {

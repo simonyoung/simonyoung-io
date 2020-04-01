@@ -1,5 +1,6 @@
 import fetch from 'node-fetch';
 import HomePage from '../components/HomePage';
+import { getContent } from '../helpers/contentful';
 
 const Index = ({ siteConfig, allPosts }) => (
   <HomePage allPosts={allPosts} siteConfig={siteConfig} />
@@ -7,9 +8,7 @@ const Index = ({ siteConfig, allPosts }) => (
 
 export async function getStaticProps() {
   const siteConfig = await import(`../data/config.json`);
-  console.log(process.env.API_BASE_URL);
-  const res = await fetch(`https://simonyoung-io.now.sh/api/posts`);
-  const posts = await res.json();
+  const posts = await getContent(process.env.CONTENTFUL_BLOG_CONTENT_TYPE);
 
   return {
     props: {
