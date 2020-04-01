@@ -6,7 +6,7 @@ const PostPage = ({ siteTitle, data }) => {
 };
 
 export async function getStaticPaths() {
-  const res = await fetch(process.env.API_BASE_URL + `/api/posts`);
+  const res = await fetch(`https://simonyoung-io.now.sh/api/posts`);
   const posts = await res.json();
 
   const paths = posts.map(post => ({
@@ -19,7 +19,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const siteConfig = await import(`../../data/config.json`);
   const res = await fetch(
-    process.env.API_BASE_URL + `/api/post/${params.slug}`
+    `https://simonyoung-io.now.sh/api/post/${params.slug}`
   );
   const data = await res.json();
 
