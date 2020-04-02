@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const PostLink = props => (
   <li>
-    <Link href="/p/[id]" as={`/p/${props.id}`}>
+    <Link href="/p/[slug]" as={`/p/${props.url}`}>
       <a>{props.title}</a>
     </Link>
   </li>
@@ -16,7 +16,7 @@ export default ({ allPosts, siteConfig }) => {
           allPosts.map((blog, index) => (
             <PostLink
               key={`${blog.fields.url}-${index}`}
-              id={blog.fields.url}
+              url={blog.fields.url}
               title={blog.fields.title}
             />
           ))}
