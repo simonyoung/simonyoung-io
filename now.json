@@ -3,7 +3,8 @@
     "env": {
       "CONTENTFUL_SPACE_ID": "@contentful_space_id",
       "CONTENTFUL_ACCESS_TOKEN": "@contentful_access_token",
-      "CONTENTFUL_BLOG_CONTENT_TYPE": "@contentful_blog_content_type"
+      "CONTENTFUL_BLOG_CONTENT_TYPE": "@contentful_blog_content_type",
+      "CONTENTFUL_PAGE_CONTENT_TYPE": "@contentful_page_content_type"
     }
   }
 }
