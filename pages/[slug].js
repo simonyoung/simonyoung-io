@@ -16,15 +16,15 @@ export async function getStaticPaths() {
   const posts = await getContent(process.env.CONTENTFUL_PAGE_CONTENT_TYPE);
   console.log(posts);
   const paths = posts.map(post => ({
-    params: { page: post.fields.url }
+    params: { slug: post.fields.url }
   }));
 
-  return { paths, fallback: true };
+  return { paths, fallback: false };
 }
 
 export async function getStaticProps({ params }) {
   const siteConfig = await import(`../data/config.json`);
-  const data = await getPageBySlug(params.page);
+  const data = await getPageBySlug(params.slug);
 
   return {
     props: {
