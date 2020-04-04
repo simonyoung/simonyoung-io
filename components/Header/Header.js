@@ -14,7 +14,12 @@ const Header = () => {
         <Link href="/">
           <a>Home</a>
         </Link>
-        <NavLink key="notes" url="notes" title="Notes" />
+        <Link href="/archive">
+          <a>Archive</a>
+        </Link>
+        <Link href="/notes">
+          <a>Notes</a>
+        </Link>
         <NavLink key="about" url="about" title="About" />
         <NavLink key="speaking" url="speaking" title="Speaking" />
         <hr />

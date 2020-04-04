@@ -14,12 +14,11 @@ const DynamicContentPage = ({ siteTitle, data }) => {
 
 export async function getStaticPaths() {
   const posts = await getContent(process.env.CONTENTFUL_PAGE_CONTENT_TYPE);
-  console.log(posts);
   const paths = posts.map(post => ({
     params: { slug: post.fields.url }
   }));
 
-  return { paths, fallback: true };
+  return { paths, fallback: false };
 }
 
 export async function getStaticProps({ params }) {
