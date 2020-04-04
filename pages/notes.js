@@ -8,7 +8,6 @@ const NotesPage = ({ siteConfig, allNotes }) => (
 export async function getStaticProps() {
   const siteConfig = await import(`../data/config.json`);
   const notes = await getContent(process.env.CONTENTFUL_NOTE_CONTENT_TYPE);
-  console.log(notes);
   return {
     props: {
       allNotes: notes,
