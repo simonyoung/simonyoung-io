@@ -30,3 +30,12 @@ export const getPageBySlug = async slug => {
   if (entry.items) return entry.items[0];
   console.log(`Error getting Entries for ${contentType.name}.`);
 };
+
+export const getNoteBySlug = async slug => {
+  const entry = await client.getEntries({
+    content_type: 'note',
+    'fields.note_url': slug
+  });
+  if (entry.items) return entry.items[0];
+  console.log(`Error getting Entries for ${contentType.name}.`);
+};

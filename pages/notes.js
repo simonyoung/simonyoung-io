@@ -1,22 +1,20 @@
 import { getContent } from '../helpers/contentful';
-import HomePage from '../components/HomePage';
+import Notes from '../components/Notes';
 
-const Index = ({ siteConfig, allPosts, allNotes }) => (
-  <HomePage allPosts={allPosts} allNotes={allNotes} siteConfig={siteConfig} />
+const NotesPage = ({ siteConfig, allNotes }) => (
+  <Notes allNotes={allNotes} siteConfig={siteConfig} />
 );
 
 export async function getStaticProps() {
   const siteConfig = await import(`../data/config.json`);
-  const posts = await getContent(process.env.CONTENTFUL_BLOG_CONTENT_TYPE);
   const notes = await getContent(process.env.CONTENTFUL_NOTE_CONTENT_TYPE);
-
+  console.log(notes);
   return {
     props: {
-      allPosts: posts,
       allNotes: notes,
       ...siteConfig
     }
   };
 }
 
-export default Index;
+export default NotesPage;
