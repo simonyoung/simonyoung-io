@@ -16,9 +16,9 @@ export default ({ allPosts, siteConfig }) => {
         {allPosts &&
           allPosts.map((blog, index) => (
             <PostLink
-              key={`${blog.fields.url}-${index}`}
-              url={blog.fields.url}
-              title={blog.fields.title}
+              key={`${blog.fields.post_url}-${index}`}
+              url={blog.fields.post_url}
+              title={blog.fields.post_title}
             />
           ))}
       </ul>

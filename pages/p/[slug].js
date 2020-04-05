@@ -9,7 +9,7 @@ export async function getStaticPaths() {
   const posts = await getContent(process.env.CONTENTFUL_BLOG_CONTENT_TYPE);
 
   const paths = posts.map(post => ({
-    params: { slug: post.fields.url }
+    params: { slug: post.fields.post_url }
   }));
 
   return { paths, fallback: false };

@@ -16,7 +16,7 @@ export const getContent = async content_type => {
 export const getContentBySlug = async slug => {
   const entry = await client.getEntries({
     content_type: 'post',
-    'fields.url': slug
+    'fields.post_url': slug
   });
   if (entry.items) return entry.items[0];
   console.log(`Error getting Entries for ${contentType.name}.`);
