@@ -25,6 +25,7 @@ const NoteLink = props => (
 export default ({ allPosts, allNotes, siteConfig }) => {
   return (
     <>
+      <h2>Articles</h2>
       <div className="post-list">
         {allPosts &&
           allPosts.map((blog, index) => (

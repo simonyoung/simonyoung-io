@@ -1,7 +1,6 @@
 import React from 'react';
 import App from 'next/app';
 import Layout from '../components/Layout';
-import '../styles/tailwind.css';
 
 class MyApp extends App {
   render() {

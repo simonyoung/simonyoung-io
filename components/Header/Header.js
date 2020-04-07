@@ -9,21 +9,34 @@ const NavLink = props => (
 const Header = () => {
   return (
     <React.Fragment>
-      <header className="">
+      <nav>
         <h1>Simon Young</h1>
-        <Link href="/">
-          <a>Home</a>
-        </Link>
-        <Link href="/archive">
-          <a>Archive</a>
-        </Link>
-        <Link href="/notes">
-          <a>Notes</a>
-        </Link>
-        <NavLink key="about" url="about" title="About" />
-        <NavLink key="speaking" url="speaking" title="Speaking" />
-        <hr />
-      </header>
+        <ul>
+          <li>
+            <Link href="/">
+              <a>Home</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/archive">
+              <a>Archive</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/notes">
+              <a>Notes</a>
+            </Link>
+          </li>
+
+          <li>
+            <NavLink key="about" url="about" title="About" />
+          </li>
+          <li>
+            <NavLink key="speaking" url="speaking" title="Speaking" />
+          </li>
+        </ul>
+      </nav>
+      <hr />
     </React.Fragment>
   );
 };
