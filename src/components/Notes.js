@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const NoteLink = props => (
+const NoteLink = (props) => (
   <li>
     <Link href="/notes/[slug]" as={`/notes/${props.url}`}>
       <a>{props.title}</a>

@@ -1,16 +1,16 @@
 module.exports = {
   env: {
     browser: true,
-    es6: true
+    es6: true,
   },
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
     'prettier',
-    'prettier/react'
+    'prettier/react',
   ],
   globals: {
-    Promise: true
+    Promise: true,
   },
   plugins: ['react', 'prettier', 'import'],
   rules: {
@@ -21,9 +21,9 @@ module.exports = {
       {
         argsIgnorePattern: '^_',
         varsIgnorePattern: '^_',
-        ignoreRestSiblings: true
-      }
+        ignoreRestSiblings: true,
+      },
     ],
-    'no-param-reassign': 'error'
-  }
+    'no-param-reassign': 'error',
+  },
 };

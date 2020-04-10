@@ -11,8 +11,8 @@ export async function getStaticProps() {
   return {
     props: {
       allPosts: posts,
-      ...siteConfig
-    }
+      ...siteConfig,
+    },
   };
 }
 

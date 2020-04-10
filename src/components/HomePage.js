@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Moment from 'react-moment';
 
-const PostLink = props => (
+const PostLink = (props) => (
   <div className="post-box">
     <p>
       <Moment date={props.date} format="DD MMM YYYY" />
@@ -14,7 +14,7 @@ const PostLink = props => (
   </div>
 );
 
-const NoteLink = props => (
+const NoteLink = (props) => (
   <li>
     <Link href="/notes/[slug]" as={`/notes/${props.url}`}>
       <a>{props.title}</a>

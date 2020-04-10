@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const PostLink = props => (
+const PostLink = (props) => (
   <li>
     <Link href="/p/[slug]" as={`/p/${props.url}`}>
       <a>{props.title}</a>

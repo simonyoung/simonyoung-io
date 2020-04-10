@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const NavLink = props => (
+const NavLink = (props) => (
   <Link href="/[slug]" as={`/${props.url}`}>
     <a>{props.title}</a>
   </Link>
