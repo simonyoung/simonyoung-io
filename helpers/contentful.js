@@ -13,29 +13,11 @@ export const getContent = async content_type => {
   console.log(`Error getting Entries for ${contentType.name}.`);
 };
 
-export const getContentBySlug = async slug => {
+export const getContentBySlug = async (slug, content_type) => {
   const entry = await client.getEntries({
-    content_type: 'post',
-    'fields.post_url': slug
+    content_type: content_type,
+    'fields.slug': slug
   });
   if (entry.items) return entry.items[0];
-  console.log(`Error getting Entries for ${contentType.name}.`);
-};
-
-export const getPageBySlug = async slug => {
-  const entry = await client.getEntries({
-    content_type: 'page',
-    'fields.url': slug
-  });
-  if (entry.items) return entry.items[0];
-  console.log(`Error getting Entries for ${contentType.name}.`);
-};
-
-export const getNoteBySlug = async slug => {
-  const entry = await client.getEntries({
-    content_type: 'note',
-    'fields.note_url': slug
-  });
-  if (entry.items) return entry.items[0];
-  console.log(`Error getting Entries for ${contentType.name}.`);
+  console.log(`Error retrieving ntries for ${contentType.name}.`);
 };

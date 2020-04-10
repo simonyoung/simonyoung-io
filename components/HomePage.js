@@ -30,8 +30,8 @@ export default ({ allPosts, allNotes, siteConfig }) => {
         {allPosts &&
           allPosts.map((blog, index) => (
             <PostLink
-              key={`${blog.fields.post_url}-${index}`}
-              url={blog.fields.post_url}
+              key={`${blog.fields.slug}-${index}`}
+              url={blog.fields.slug}
               title={blog.fields.post_title}
               date={blog.fields.post_date}
             />
@@ -43,8 +43,8 @@ export default ({ allPosts, allNotes, siteConfig }) => {
         {allNotes &&
           allNotes.map((note, index) => (
             <NoteLink
-              key={`${note.fields.note_url}-${index}`}
-              url={note.fields.note_url}
+              key={`${note.fields.slug}-${index}`}
+              url={note.fields.slug}
               title={note.fields.note_title}
             />
           ))}

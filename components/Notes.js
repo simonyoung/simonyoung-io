@@ -16,8 +16,8 @@ export default ({ allNotes, siteConfig }) => {
         {allNotes &&
           allNotes.map((note, index) => (
             <NoteLink
-              key={`${note.fields.note_url}-${index}`}
-              url={note.fields.note_url}
+              key={`${note.fields.slug}-${index}`}
+              url={note.fields.slug}
               title={note.fields.note_title}
             />
           ))}

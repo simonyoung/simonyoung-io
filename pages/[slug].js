@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import { getContent, getPageBySlug } from '../helpers/contentful';
+import { getContent, getContentBySlug } from '../helpers/contentful';
 import DynamicContent from '../components/DynamicContent';
 
 const DynamicContentPage = ({ siteTitle, data }) => {
@@ -15,7 +15,7 @@ const DynamicContentPage = ({ siteTitle, data }) => {
 export async function getStaticPaths() {
   const posts = await getContent(process.env.CONTENTFUL_PAGE_CONTENT_TYPE);
   const paths = posts.map(post => ({
-    params: { slug: post.fields.url }
+    params: { slug: post.fields.slug }
   }));
 
   return { paths, fallback: false };
@@ -23,7 +23,10 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const siteConfig = await import(`../data/config.json`);
-  const data = await getPageBySlug(params.slug);
+  const data = await getContentBySlug(
+    params.slug,
+    process.env.CONTENTFUL_PAGE_CONTENT_TYPE
+  );
 
   return {
     props: {
