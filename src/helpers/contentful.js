@@ -19,5 +19,5 @@ export const getContentBySlug = async (slug, content_type) => {
     'fields.slug': slug,
   });
   if (entry.items) return entry.items[0];
-  console.log(`Error retrieving ntries for ${contentType.name}.`);
+  console.log(`Error retrieving entries for ${contentType.name}.`);
 };
