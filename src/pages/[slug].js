@@ -22,7 +22,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const siteConfig = await import(`../../data/config.json`);
+  const siteConfig = await import(`data/config.json`);
   const data = await getContentBySlug(
     params.slug,
     process.env.CONTENTFUL_PAGE_CONTENT_TYPE
