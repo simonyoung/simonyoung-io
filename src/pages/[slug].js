@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import { getContent, getContentBySlug } from '../helpers/contentful';
-import DynamicContent from '../components/DynamicContent';
+import DynamicContent from 'components/DynamicContent';
 
 const DynamicContentPage = ({ siteTitle, data }) => {
   const router = useRouter();

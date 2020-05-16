@@ -1,5 +1,5 @@
-import { getContent, getContentBySlug } from '../../helpers/contentful';
-import Post from '../../components/Post';
+import { getContent, getContentBySlug } from 'helpers/contentful';
+import Post from 'components/Post';
 
 const PostPage = ({ siteTitle, data }) => {
   return <Post title={siteTitle} data={data} />;

@@ -1,5 +1,5 @@
-import { getContent, getContentBySlug } from '../../helpers/contentful';
-import Note from '../../components/Note';
+import { getContent, getContentBySlug } from 'helpers/contentful';
+import Note from 'components/Note';
 
 const NotePage = ({ siteTitle, data }) => {
   return <Note title={siteTitle} data={data} />;

@@ -1,5 +1,5 @@
-import { getContent } from '../helpers/contentful';
-import Archive from '../components/Archive';
+import { getContent } from 'helpers/contentful';
+import Archive from 'components/Archive';
 
 const ArchivePage = ({ siteConfig, allPosts }) => (
   <Archive allPosts={allPosts} siteConfig={siteConfig} />

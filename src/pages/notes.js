@@ -1,5 +1,5 @@
-import { getContent } from '../helpers/contentful';
-import Notes from '../components/Notes';
+import { getContent } from 'helpers/contentful';
+import Notes from 'components/Notes';
 
 const NotesPage = ({ siteConfig, allNotes }) => (
   <Notes allNotes={allNotes} siteConfig={siteConfig} />
