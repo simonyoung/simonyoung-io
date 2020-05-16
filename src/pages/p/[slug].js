@@ -12,7 +12,7 @@ export async function getStaticPaths() {
     params: { slug: post.fields.slug },
   }));
 
-  return { paths, fallback: true };
+  return { paths, fallback: false };
 }
 
 export async function getStaticProps({ params }) {
