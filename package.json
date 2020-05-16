@@ -5,8 +5,8 @@
   "author": "Simon Young <simon180@mac.com>",
   "license": "MIT",
   "dependencies": {
-    "contentful": "^7.14.2",
-    "moment": "^2.24.0",
+    "contentful": "^7.14.4",
+    "moment": "^2.25.0",
     "next": "^9.4.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
