@@ -27,6 +27,7 @@ export async function getStaticProps({ params }) {
       siteTitle: siteConfig.title,
       data: data,
     },
+    unstable_revalidate: 1,
   };
 }
 

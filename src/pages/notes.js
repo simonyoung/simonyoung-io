@@ -13,6 +13,7 @@ export async function getStaticProps() {
       allNotes: notes,
       ...siteConfig,
     },
+    unstable_revalidate: 1,
   };
 }
 
