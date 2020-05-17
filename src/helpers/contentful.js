@@ -5,9 +5,11 @@ const client = createClient({
   accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
 });
 
-export const getContent = async (content_type) => {
+export const getContent = async (content_type, sort_order) => {
+  let default_sort_order = process.env.CONTENTFUL_DEFAULT_SORT;
   const entries = await client.getEntries({
     content_type: content_type,
+    order: sort_order || default_sort_order,
   });
   if (entries.items) return entries.items;
   console.log(`Error getting Entries for ${contentType.name}.`);

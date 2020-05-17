@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const PostLink = (props) => (
   <li>
-    <Link href="/p/[slug]" as={`/p/${props.url}`}>
+    <Link href="/blog/[slug]" as={`/blog/${props.url}`}>
       <a>{props.title}</a>
     </Link>
   </li>
