@@ -6,7 +6,7 @@ const client = createClient({
 });
 
 export const getContent = async (content_type, sort_order) => {
-  let default_sort_order = process.env.CONTENTFUL_DEFAULT_SORT;
+  let default_sort_order = '-sys.createdAt';
   const entries = await client.getEntries({
     content_type: content_type,
     order: sort_order || default_sort_order,
