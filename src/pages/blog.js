@@ -1,8 +1,8 @@
 import { getContent } from 'helpers/contentful';
-import Archive from 'components/Archive';
+import Blog from 'components/Blog';
 
-const ArchivePage = ({ siteConfig, allPosts }) => (
-  <Archive allPosts={allPosts} siteConfig={siteConfig} />
+const BlogPage = ({ siteConfig, allPosts }) => (
+  <Blog allPosts={allPosts} siteConfig={siteConfig} />
 );
 
 export async function getStaticProps() {
@@ -17,4 +17,4 @@ export async function getStaticProps() {
   };
 }
 
-export default ArchivePage;
+export default BlogPage;

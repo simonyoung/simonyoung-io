@@ -11,7 +11,7 @@ const PostLink = (props) => (
 export default ({ allPosts, siteConfig }) => {
   return (
     <>
-      <h2>Archive</h2>
+      <h2>Blog</h2>
       <ul className="list">
         {allPosts &&
           allPosts.map((blog, index) => (
