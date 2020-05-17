@@ -1,7 +1,12 @@
 import { getContent, getContentBySlug } from 'helpers/contentful';
+import { useRouter } from 'next/router';
 import Post from 'components/Post';
 
 const PostPage = ({ siteTitle, data }) => {
+  const router = useRouter();
+  if (router.isFallback) {
+    return <div>Loading...</div>;
+  }
   return <Post title={siteTitle} data={data} />;
 };
 
@@ -12,7 +17,7 @@ export async function getStaticPaths() {
     params: { slug: post.fields.slug },
   }));
 
-  return { paths, fallback: false };
+  return { paths, fallback: true };
 }
 
 export async function getStaticProps({ params }) {
