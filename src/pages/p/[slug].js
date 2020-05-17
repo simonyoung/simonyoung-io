@@ -1,5 +1,5 @@
-import { getContent, getContentBySlug } from 'helpers/contentful';
 import { useRouter } from 'next/router';
+import { getContent, getContentBySlug } from 'helpers/contentful';
 import Post from 'components/Post';
 
 const PostPage = ({ siteTitle, data }) => {

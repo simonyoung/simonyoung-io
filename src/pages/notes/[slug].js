@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import { getContent, getContentBySlug } from 'helpers/contentful';
 import Note from 'components/Note';
 
