@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { HeaderContainer, HeaderContent, HeaderLinks } from './Header.styles';
+import Logo from 'components/Logo';
 
 const NavLink = (props) => (
   <Link href="/[slug]" as={`/${props.url}`}>
@@ -11,11 +12,9 @@ const Header = () => {
   return (
     <HeaderContainer>
       <HeaderContent>
-        <h1>
-          <Link href="/">
-            <a>Simon Young</a>
-          </Link>
-        </h1>
+        <Link href="/">
+          <Logo />
+        </Link>
         <HeaderLinks>
           <Link href="/blog">
             <a>Blog</a>

@@ -1,6 +1,7 @@
 import App from 'next/app';
 import { ThemeProvider } from 'styled-components';
 import Layout from 'components/Layout';
+import 'styles/fonts.scss';
 
 const theme = {
   colors: {
