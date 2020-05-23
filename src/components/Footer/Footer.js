@@ -1,10 +1,15 @@
+import { FooterContainer, FooterAuthor } from './Footer.styles';
+
 const Footer = () => {
   return (
-    <footer>
-      {'Copyright © Simon Young, '}
-      {new Date().getFullYear()}
-      {'.'}
-    </footer>
+    <FooterContainer>
+      <FooterAuthor href="https://www.simonyoung.io/">
+        {'Copyright © Simon Young, '}
+        {new Date().getFullYear()}
+        {'. Design courtesy of Marguerite Roth'}
+      </FooterAuthor>
+      <footer></footer>
+    </FooterContainer>
   );
 };
 

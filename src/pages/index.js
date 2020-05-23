@@ -1,5 +1,5 @@
 import { getContent } from 'helpers/contentful';
-import HomePage from 'components/HomePage';
+import HomePage from 'components/HomePage/HomePage';
 
 const Index = ({ siteConfig, allPosts }) => (
   <HomePage allPosts={allPosts} siteConfig={siteConfig} />

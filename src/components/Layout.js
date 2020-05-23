@@ -1,6 +1,7 @@
 import Header from 'components/Header/Header';
 import Footer from 'components/Footer/Footer';
 import Head from 'next/head';
+import { GlobalStyle, LayoutContainer } from './Layout.styles';
 
 const Layout = ({ children }) => {
   return (
@@ -12,9 +13,12 @@ const Layout = ({ children }) => {
           rel="stylesheet"
         />
       </Head>
-      <Header />
-      {children}
-      <Footer />
+      <GlobalStyle />
+      <LayoutContainer className="div">
+        <Header />
+        {children}
+        <Footer />
+      </LayoutContainer>
     </React.Fragment>
   );
 };

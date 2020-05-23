@@ -8,10 +8,12 @@
     "contentful": "^7.14.4",
     "moment": "^2.25.0",
     "next": "^9.4.0",
+    "polished": "^3.6.3",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-markdown": "^4.3.1",
-    "react-moment": "^0.9.7"
+    "react-moment": "^0.9.7",
+    "styled-components": "^5.1.0"
   },
   "scripts": {
     "dev": "next",
@@ -20,6 +22,7 @@
     "lint": "eslint"
   },
   "devDependencies": {
+    "babel-plugin-styled-components": "^1.10.7",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-react": "^7.18.0",

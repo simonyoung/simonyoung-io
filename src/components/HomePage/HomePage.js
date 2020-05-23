@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Hero } from './HomePage.styles';
 import Moment from 'react-moment';
 
 const PostLink = (props) => (
@@ -17,6 +18,13 @@ const PostLink = (props) => (
 export default ({ allPosts, siteConfig }) => {
   return (
     <>
+      <Hero>
+        <h1>
+          I'm your new <a href="#">Next.js</a> site. Hello and{' '}
+          <a href="#">welcome</a>. Enjoy your <a href="#">visit</a>. It's{' '}
+          <a href="#">nice</a> here. I deploy to <a href="#">Vercel</a>.
+        </h1>
+      </Hero>
       <h2>Latest Posts</h2>
       <div className="post-list">
         {allPosts &&
