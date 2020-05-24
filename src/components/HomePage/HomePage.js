@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Hero } from './HomePage.styles';
+import Button from 'components/Button/Button';
 import Moment from 'react-moment';
 
 const PostLink = (props) => (
@@ -19,13 +20,15 @@ export default ({ allPosts, siteConfig }) => {
   return (
     <>
       <Hero>
+        <h2>Hello 👋</h2>
         <h1>
-          I'm your new <a href="#">Next.js</a> site. Hello and{' '}
-          <a href="#">welcome</a>. Enjoy your <a href="#">visit</a>. It's{' '}
-          <a href="#">nice</a> here. I deploy to <a href="#">Vercel</a>.
+          I'm <a href="#">Simon</a>. I'm a software engineering leader based in
+          London. Sometimes I <a href="#">speak at conferences</a>. I'm also a{' '}
+          <a href="#">photographer</a>.
         </h1>
+        <Button>Talk to me</Button>
       </Hero>
-      <h2>Latest Posts</h2>
+      <h2>Blog</h2>
       <div className="post-list">
         {allPosts &&
           allPosts.map((blog, index) => (

@@ -1,3 +1,3 @@
-const Logo = () => <p>Simon Young</p>;
+const Logo = () => <h3>Simon Young</h3>;
 
 export default Logo;
