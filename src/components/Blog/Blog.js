@@ -43,12 +43,7 @@ export default ({ allPosts, siteConfig }) => {
                 <BlogPostDescription>
                   Preview description of blog post
                 </BlogPostDescription>
-                <BlogPostAction
-                  className="PostCardAction"
-                  key={`${blog.fields.slug}-${index}`}
-                  url={blog.fields.slug}
-                  title={blog.fields.post_title}
-                >
+                <BlogPostAction className="PostCardAction">
                   Read more <span>&#8594;</span>
                 </BlogPostAction>
                 <BlogPostMetas>
