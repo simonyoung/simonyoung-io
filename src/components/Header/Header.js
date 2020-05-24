@@ -12,9 +12,7 @@ const Header = () => {
   return (
     <HeaderContainer>
       <HeaderContent>
-        <Link href="/">
-          <Logo />
-        </Link>
+        <Logo />
         <HeaderLinks>
           <Link href="/blog">
             <a>Blog</a>

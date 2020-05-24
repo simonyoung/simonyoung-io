@@ -12,8 +12,8 @@ import {
   BlogPostDescription,
 } from './Blog.styles';
 
-const PostLink = (props) => (
-  <Link href="/blog/[slug]" as={`/blog/${props.url}`}>
+const BlogPostLink = (props) => (
+  <Link href="/blog/[slug]" as={`/blog/${props.url}`} passHref>
     {props.children}
   </Link>
 );
@@ -25,10 +25,9 @@ export default ({ allPosts, siteConfig }) => {
       <BlogGrid>
         {allPosts &&
           allPosts.map((blog, index) => (
-            <PostLink
+            <BlogPostLink
               key={`${blog.fields.slug}-${index}`}
               url={blog.fields.slug}
-              title={blog.fields.post_title}
             >
               <BlogPostContainer className="BlogPostCard">
                 <BlogPostCategory>Development</BlogPostCategory>
@@ -44,7 +43,7 @@ export default ({ allPosts, siteConfig }) => {
                   <BlogPostDate>1 May 2020</BlogPostDate>
                 </BlogPostMetas>
               </BlogPostContainer>
-            </PostLink>
+            </BlogPostLink>
           ))}
       </BlogGrid>
     </>
