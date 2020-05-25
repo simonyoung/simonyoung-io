@@ -10,11 +10,11 @@ export const LogoContainer = styled.div`
   h1 {
     margin-block-start: 0;
     margin-block-end: 0;
-    color: ${colors.orange500};
+    color: ${colors.green500};
     text-decoration: none;
     border-bottom: 0;
-    font-weight: 700;
-    font-size: 1.75em;
+    font-weight: 800;
+    font-size: 2.25em;
     line-height: 1em;
     height: 100%;
     padding-bottom: 0;
