@@ -7,7 +7,11 @@ const Index = ({ siteConfig, allPosts }) => (
 
 export async function getStaticProps() {
   const siteConfig = await import(`data/config.json`);
-  const posts = await getContent(process.env.CONTENTFUL_BLOG_CONTENT_TYPE);
+  const posts = await getContent(
+    process.env.CONTENTFUL_BLOG_CONTENT_TYPE,
+    '-sys.createdAt',
+    3
+  );
 
   return {
     props: {

@@ -9,3 +9,13 @@ html {
     font-family: 'Inter var', sans-serif;
   }
 }
+
+@font-face {
+  font-family: 'VaultAlarm';
+  src: url('fonts/VaultAlarm-Regular.otf') format('otf'),
+    url('fonts/VaultAlarm-Regular.woff2') format('woff2'),
+    url('fonts/VaultAlarm-Regular.woff') format('woff'),
+    url('fonts/VaultAlarm-Regular.ttf') format('truetype');
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+}
