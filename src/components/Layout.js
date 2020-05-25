@@ -8,10 +8,6 @@ const Layout = ({ children }) => {
     <React.Fragment>
       <Head>
         <title>Simon Young</title>
-        <link
-          href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
-          rel="stylesheet"
-        />
       </Head>
       <GlobalStyle />
       <LayoutContainer className="div">
