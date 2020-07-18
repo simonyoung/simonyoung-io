@@ -8,7 +8,50 @@
   },
 
   // Set *default* container specific settings.json values on container create.
-  "settings": {},
+  "settings": {
+    "breadcrumbs.enabled": true,
+    "dimmer.context": 0,
+    "dimmer.enabled": true,
+    "dimmer.when": "selection",
+    "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
+    "editor.codeLens": false,
+    "editor.fontLigatures": true,
+    "editor.fontSize": 14,
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": false,
+    "editor.minimap.renderCharacters": false,
+    "editor.snippetSuggestions": "top",
+    "editor.suggestSelection": "first",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": false
+    },
+    "editor.tabCompletion": "on",
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "all",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "gitlens.advanced.messages": {
+      "suppressShowKeyBindingsNotice": true
+    },
+    "javascript.validate.enable": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "prettier.singleQuote": true,
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/release": true,
+      "**/logs": true
+    },
+    "terminal.integrated.fontFamily": "",
+    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.shell.linux": "/bin/zsh",
+    "workbench.colorTheme": "Moonlight II",
+    "workbench.fontAliasing": "antialiased",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.sideBar.location": "left"
+  },
 
   // Add the IDs of extensions you want installed when the container is created.
   "extensions": [
