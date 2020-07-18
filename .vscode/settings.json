@@ -1,0 +1,31 @@
+{
+  "workbench.colorTheme": "Moonlight II",
+  "workbench.iconTheme": "Monokai Classic Icons",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.minimap.enabled": false,
+  "editor.minimap.renderCharacters": false,
+  "editor.snippetSuggestions": "top",
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": false
+  },
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "all",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "terminal.integrated.fontFamily": "",
+  "terminal.integrated.fontSize": 12,
+  "dimmer.enabled": true,
+  "dimmer.context": 0,
+  "dimmer.when": "selection",
+  "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/release": true,
+    "**/logs": true
+  },
+  "workbench.fontAliasing": "antialiased"
+}
