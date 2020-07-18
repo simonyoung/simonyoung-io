@@ -34,9 +34,6 @@
     "**/release": true,
     "**/logs": true
   },
-  "terminal.integrated.fontFamily": "",
-  "terminal.integrated.fontSize": 12,
-  "terminal.integrated.shell.linux": "/bin/zsh",
   "workbench.colorTheme": "Moonlight II",
   "workbench.fontAliasing": "antialiased",
   "workbench.iconTheme": "material-icon-theme",
