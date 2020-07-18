@@ -1,6 +1,6 @@
 {
   "workbench.colorTheme": "Moonlight II",
-  "workbench.iconTheme": "Monokai Classic Icons",
+  "workbench.iconTheme": "material-icon-theme",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "editor.minimap.enabled": false,
