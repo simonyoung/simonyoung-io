@@ -10,12 +10,12 @@ const BlogPostLink = (props) => (
 export default ({ allPosts, siteConfig }) => {
   return (
     <>
-      <main class="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-8 sm:px-6 md:mt-12 lg:mt-16 xl:mt-24">
+      <main class="mx-auto max-w-screen-xl px-4 sm:mt-0 sm:px-6 md:mt-4 lg:mt-8 xl:mt-16">
         <div class="text-center">
           <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
             Hello, I'm
             <br class="xl:hidden" />
-            <span class="text-indigo-600"> Simon Young</span>
+            <span class="text-teal-400"> Simon Young</span>.
           </h2>
           <p class="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
             I'm a software engineering leader based in London.
@@ -26,7 +26,7 @@ export default ({ allPosts, siteConfig }) => {
             <div class="rounded-md shadow">
               <a
                 href="#"
-                class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
+                class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-teal-400 hover:bg-teal-500 focus:outline-none focus:border-teal-700 focus:shadow-outline-teal transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
               >
                 Talk to me
               </a>
@@ -35,7 +35,7 @@ export default ({ allPosts, siteConfig }) => {
         </div>
       </main>
 
-      <div class="relative pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+      <div class="relative pt-8 pb-4 px-4 sm:px-6 lg:pt-16 lg:pb-12 lg:px-8">
         <div class="absolute inset-0">
           <div class="bg-white h-1/3 sm:h-2/3"></div>
         </div>
@@ -66,7 +66,7 @@ export default ({ allPosts, siteConfig }) => {
                     </div>
                     <div class="flex-1 bg-white p-6 flex flex-col justify-between">
                       <div class="flex-1">
-                        <p class="text-sm leading-5 font-medium text-indigo-600">
+                        <p class="text-sm leading-5 font-medium text-teal-600">
                           <a href="#" class="hover:underline">
                             Blog
                           </a>
