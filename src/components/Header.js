@@ -12,12 +12,10 @@ const NavLink = (props) => (
 
 const Header = () => {
   return (
-    <header className="flex justify-between items-center py-8 px-12">
-      <div>
-        <Logo />
-      </div>
+    <header className="max-w-screen-xl mx-auto py-8 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
+      <Logo />
 
-      <div className="md:flex items-center justify-end space-x-8 md:flex-1 lg:w-0">
+      <div className="md:flex items-center text-center space-x-8 md:text-justify">
         <Link href="/blog">
           <a className="font-medium text-gray-500 hover:text-gray-700">Blog</a>
         </Link>
