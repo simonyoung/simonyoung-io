@@ -39,8 +39,7 @@ export default ({ allPosts, siteConfig }) => {
                   Read more <span>&#8594;</span>
                 </BlogPostAction>
                 <BlogPostMetas>
-                  <BlogPostAuthor>Simon Young</BlogPostAuthor>
-                  <BlogPostDate>1 May 2020</BlogPostDate>
+                  <BlogPostDate>{blog.fields.post_date}</BlogPostDate>
                 </BlogPostMetas>
               </BlogPostContainer>
             </BlogPostLink>
