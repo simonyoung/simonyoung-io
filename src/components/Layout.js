@@ -1,5 +1,5 @@
-import Header from 'components/Header/Header';
-import Footer from 'components/Footer/Footer';
+import Header from 'components/Header';
+import Footer from 'components/Footer';
 import Head from 'next/head';
 
 const Layout = ({ children }) => {
@@ -11,11 +11,7 @@ const Layout = ({ children }) => {
           <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
         </Head>
 
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0">
-          <h1 className="text-lg text-center m-4">TailwindUI/Next.js</h1>
-          <p className="bg-red-100">
-            This is a test of the tailwind next integration.
-          </p>
+        <div className="relative pt-4 pb-4 px-4 sm:px-6 lg:pt-4 lg:pb-4 lg:px-8">
           <Header />
           {children}
           <Footer />

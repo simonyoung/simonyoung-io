@@ -16,7 +16,8 @@ const Header = () => {
       <div>
         <Logo />
       </div>
-      <div className="text-base leading-5">
+
+      <div class="md:flex items-center justify-end space-x-8 md:flex-1 lg:w-0">
         <Link href="/blog">
           <a className="font-medium text-gray-500 hover:text-gray-700">Blog</a>
         </Link>
