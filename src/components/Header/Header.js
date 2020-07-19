@@ -1,26 +1,28 @@
 import Link from 'next/link';
-import { HeaderContainer, HeaderContent, HeaderLinks } from './Header.styles';
+
 import Logo from 'components/Logo';
 
 const NavLink = (props) => (
   <Link href="/[slug]" as={`/${props.url}`}>
-    <a>{props.title}</a>
+    <a className="font-medium text-gray-500 hover:text-gray-700">
+      {props.title}
+    </a>
   </Link>
 );
 
 const Header = () => {
   return (
-    <HeaderContainer>
-      <HeaderContent>
+    <header className="flex justify-between items-center py-10">
+      <div>
         <Logo />
-        <HeaderLinks>
-          <Link href="/blog">
-            <a>Blog</a>
-          </Link>
-          <NavLink key="about" url="about" title="About" />
-        </HeaderLinks>
-      </HeaderContent>
-    </HeaderContainer>
+      </div>
+      <div className="text-base leading-5">
+        <Link href="/blog">
+          <a className="font-medium text-gray-500 hover:text-gray-700">Blog</a>
+        </Link>
+        <NavLink key="about" url="about" title="About" />
+      </div>
+    </header>
   );
 };
 

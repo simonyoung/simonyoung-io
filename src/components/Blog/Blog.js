@@ -1,16 +1,4 @@
 import Link from 'next/link';
-import {
-  BlogTitle,
-  BlogGrid,
-  BlogPostContainer,
-  BlogPostCategory,
-  BlogPostTitle,
-  BlogPostMetas,
-  BlogPostAuthor,
-  BlogPostDate,
-  BlogPostAction,
-  BlogPostDescription,
-} from './Blog.styles';
 
 const BlogPostLink = (props) => (
   <Link href="/blog/[slug]" as={`/blog/${props.url}`} passHref>
@@ -21,30 +9,28 @@ const BlogPostLink = (props) => (
 export default ({ allPosts, siteConfig }) => {
   return (
     <>
-      <BlogTitle>Blog</BlogTitle>
-      <BlogGrid>
+      <div>Blog</div>
+      <div>
         {allPosts &&
           allPosts.map((blog, index) => (
             <BlogPostLink
               key={`${blog.fields.slug}-${index}`}
               url={blog.fields.slug}
             >
-              <BlogPostContainer className="BlogPostCard">
-                <BlogPostCategory>Development</BlogPostCategory>
-                <BlogPostTitle>{blog.fields.post_title}</BlogPostTitle>
-                <BlogPostDescription>
-                  Preview description of blog post
-                </BlogPostDescription>
-                <BlogPostAction className="PostCardAction">
+              <div className="BlogPostCard">
+                <div>Development</div>
+                <div>{blog.fields.post_title}</div>
+                <div>Preview description of blog post</div>
+                <div className="PostCardAction">
                   Read more <span>&#8594;</span>
-                </BlogPostAction>
-                <BlogPostMetas>
-                  <BlogPostDate>{blog.fields.post_date}</BlogPostDate>
-                </BlogPostMetas>
-              </BlogPostContainer>
+                </div>
+                <div>
+                  <div>{blog.fields.post_date}</div>
+                </div>
+              </div>
             </BlogPostLink>
           ))}
-      </BlogGrid>
+      </div>
     </>
   );
 };

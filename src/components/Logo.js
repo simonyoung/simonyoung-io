@@ -1,11 +1,14 @@
 import Link from 'next/link';
-import { LogoContainer } from './Logo.styles';
 
 const Logo = () => {
   return (
-    <LogoContainer>
-      <h1>Simon Young</h1>
-    </LogoContainer>
+    <div className="text-2xl leading-9 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-10 md:text-4xl md:leading-14">
+      <h1>
+        <Link href="/blog">
+          <a>Simon Young</a>
+        </Link>
+      </h1>
+    </div>
   );
 };
 export default Logo;
