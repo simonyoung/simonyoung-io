@@ -1,14 +1,14 @@
 import { getContent } from 'helpers/contentful';
-import Blog from 'components/Blog';
+import Notes from 'components/Notes';
 
-const BlogPage = ({ siteConfig, allPosts }) => (
-  <Blog allPosts={allPosts} siteConfig={siteConfig} />
+const NotesPage = ({ siteConfig, allPosts }) => (
+  <Notes allPosts={allPosts} siteConfig={siteConfig} />
 );
 
 export async function getStaticProps() {
   const siteConfig = await import(`data/config.json`);
   const posts = await getContent(
-    process.env.CONTENTFUL_BLOG_CONTENT_TYPE,
+    process.env.CONTENTFUL_NOTE_CONTENT_TYPE,
     '-fields.publish_date'
   );
   return {
@@ -20,4 +20,4 @@ export async function getStaticProps() {
   };
 }
 
-export default BlogPage;
+export default NotesPage;
