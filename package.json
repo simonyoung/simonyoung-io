@@ -5,19 +5,17 @@
   "author": "Simon Young <simon180@mac.com>",
   "license": "MIT",
   "dependencies": {
-    "@fullhuman/postcss-purgecss": "^2.3.0",
-    "@tailwindcss/typography": "^0.2.0",
-    "@tailwindcss/ui": "^0.3.1",
-    "contentful": "^7.14.4",
-    "moment": "^2.25.0",
-    "next": "^9.4.0",
-    "polished": "^3.6.3",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
-    "react-markdown": "^4.3.1",
-    "react-moment": "^0.9.7",
-    "sass": "^1.26.5",
-    "tailwindcss": "^1.5.1"
+    "@fullhuman/postcss-purgecss": "2.3.0",
+    "@tailwindcss/typography": "0.2.0",
+    "@tailwindcss/ui": "0.4.0",
+    "contentful": "7.14.6",
+    "moment": "2.27.0",
+    "next": "9.4.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-markdown": "4.3.1",
+    "react-moment": "0.9.7",
+    "tailwindcss": "1.5.2"
   },
   "scripts": {
     "dev": "next",
@@ -26,9 +24,9 @@
     "lint": "eslint"
   },
   "devDependencies": {
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.9.0",
-    "eslint-plugin-react": "^7.18.0",
-    "prettier": "^2.0.0"
+    "eslint": "6.8.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-react": "7.20.3",
+    "prettier": "2.0.5"
   }
 }
