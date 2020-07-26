@@ -90,9 +90,10 @@ export default ({ allPosts, siteConfig }) => {
                             </a>
                           </p>
                           <div className="flex text-sm leading-5 text-gray-500">
-                            <time dateTime="2020-05-01">May 1, 2020</time>
-                            <span className="mx-1">&middot;</span>
-                            <span>3 min read</span>
+                            <Moment
+                              date={blog.fields.publish_date}
+                              format="DD MMM YYYY"
+                            />
                           </div>
                         </div>
                       </div>

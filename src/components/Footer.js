@@ -26,7 +26,7 @@ const Footer = () => {
         </a>
         <a
           href="https://github.com/simonyoung"
-          className="ml-6 text-gray-400 hover:text-gray-500"
+          className="ml-6 text-gray-900 hover:text-gray-500"
         >
           <span className="sr-only">GitHub</span>
           <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
