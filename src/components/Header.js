@@ -24,13 +24,8 @@ const Header = () => {
               Blog
             </a>
           </Link>
-          <Link href="/notes">
-            <a className="font-medium text-gray-500 hover:text-gray-700">
-              Notes
-            </a>
-          </Link>
+
           <NavLink key="about" url="about" title="About" />
-          <NavLink key="now" url="now" title="Now" />
         </div>
       </header>
     </>

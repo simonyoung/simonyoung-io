@@ -15,23 +15,13 @@ export default ({ allPosts, siteConfig }) => {
           <h2 className="hidden text-4xl tracking-tight leading-10 font-extrabold text-gray-900 md:block sm:text-5xl sm:leading-none md:text-6xl">
             Hello, I'm
             <br className="xl:hidden" />
-            <span className="text-teal-400"> Simon Young</span>.
+            <span className="text-gray-400"> Simon Young</span>.
           </h2>
           <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
             I'm a software engineering leader based in London.
             <br /> Sometimes I <a href="#">speak at conferences</a>. I'm also a{' '}
             <a href="#">photographer</a>.
           </p>
-          <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
-            <div className="rounded-md shadow">
-              <a
-                href="#"
-                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-teal-400 hover:bg-teal-500 focus:outline-none focus:border-teal-700 focus:shadow-outline-teal transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
-              >
-                Talk to me
-              </a>
-            </div>
-          </div>
         </div>
       </main>
 
