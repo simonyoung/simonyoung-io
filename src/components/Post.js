@@ -4,7 +4,7 @@ import ReactMarkdown from 'react-markdown';
 
 export default ({ title, data }) => {
   return (
-    <div className="bg-yellow-100 max-w-screen-xl mx-auto relative py-8 overflow-hidden">
+    <div className="max-w-screen-xl mx-auto relative py-8 overflow-hidden">
       <div className="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
         <div className="relative h-full text-lg max-w-prose mx-auto">
           <svg

@@ -4,13 +4,10 @@ import Moment from 'react-moment';
 
 export default ({ title, data }) => {
   return (
-    <div className="bg-white overflow-hidden">
-      <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-        <div className="hidden lg:block bg-gray-50 absolute top-0 bottom-0 left-3/4 w-screen"></div>
+    <div className="overflow-hidden max-w-screen-xl mx-auto md-flex py-8 px-4 sm:px-6 lg:px-8">
+      <div className="relative max-w-7xl mx-auto ">
+        <div className="hidden lg:block absolute top-0 bottom-0 left-3/4 w-screen"></div>
         <div className="mx-auto text-base max-w-prose lg:max-w-none">
-          <p className="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase">
-            Case Study
-          </p>
           <h1 className="mt-2 mb-8 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
             {data.fields.page_title}
           </h1>

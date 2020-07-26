@@ -10,7 +10,7 @@ const BlogPostLink = (props) => (
 export default ({ allPosts, siteConfig }) => {
   return (
     <>
-      <main className="bg-yellow-100 max-w-screen-xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+      <main className="max-w-screen-xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="hidden text-4xl tracking-tight leading-10 font-extrabold text-gray-900 md:block sm:text-5xl sm:leading-none md:text-6xl">
             Hello, I'm
@@ -35,9 +35,9 @@ export default ({ allPosts, siteConfig }) => {
         </div>
       </main>
 
-      <div className="bg-green-200 max-w-screen-xl mx-auto relative py-8 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-screen-xl mx-auto relative py-8 px-4 sm:px-6 lg:px-8">
         <div className="absolute inset-0">
-          <div className="bg-green-100 h-1/3 sm:h-2/3"></div>
+          <div className="h-1/3 sm:h-2/3"></div>
         </div>
         <div className="relative max-w-7xl mx-auto">
           <div className="text-center">
