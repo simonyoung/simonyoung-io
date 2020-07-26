@@ -31,8 +31,8 @@ export default ({ allPosts, siteConfig }) => {
         </div>
         <div className="relative max-w-7xl mx-auto">
           <div className="text-center">
-            <h2 className="text-3xl leading-9 tracking-tight font-extrabold text-gray-900 sm:text-4xl sm:leading-10">
-              From the blog
+            <h2 className="text-2xl leading-9 tracking-tight font-extrabold text-gray-900 sm:text-3xl sm:leading-10">
+              <a>From the blog</a>
             </h2>
             <p className="mt-3 max-w-2xl mx-auto text-xl leading-7 text-gray-500 sm:mt-4">
               Recent articles I've written - published here and elsewhere.
@@ -50,44 +50,34 @@ export default ({ allPosts, siteConfig }) => {
                     <div className="flex-shrink-0">
                       <img
                         className="h-48 w-full object-cover"
-                        src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+                        src="https://images.unsplash.com/photo-1511576661531-b34d7da5d0bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
                         alt=""
                       />
                     </div>
                     <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                       <div className="flex-1">
                         <p className="text-sm leading-5 font-medium text-teal-600">
-                          <a href="#" className="hover:underline">
-                            Blog
-                          </a>
+                          Blog
                         </p>
-                        <a href="#" className="block">
-                          <h3 className="mt-2 text-xl leading-7 font-semibold text-gray-900">
-                            {blog.fields.post_title}
-                          </h3>
-                          <p className="mt-3 text-base leading-6 text-gray-500">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Architecto accusantium praesentium eius, ut
-                            atque fuga culpa, similique sequi cum eos quis
-                            dolorum.
-                          </p>
-                        </a>
+
+                        <h3 className="mt-2 text-xl leading-7 font-semibold text-gray-900">
+                          <a>{blog.fields.post_title}</a>
+                        </h3>
+                        <p className="mt-3 text-base leading-6 text-gray-500">
+                          {blog.fields.content_preview}
+                        </p>
                       </div>
                       <div className="mt-6 flex items-center">
                         <div className="flex-shrink-0">
-                          <a href="#">
-                            <img
-                              className="h-10 w-10 rounded-full"
-                              src="https://pbs.twimg.com/profile_images/920328425608445952/hy7wwmbq_400x400.jpg"
-                              alt=""
-                            />
-                          </a>
+                          <img
+                            className="h-10 w-10 rounded-full"
+                            src="https://pbs.twimg.com/profile_images/920328425608445952/hy7wwmbq_400x400.jpg"
+                            alt=""
+                          />
                         </div>
                         <div className="ml-3">
                           <p className="text-sm leading-5 font-medium text-gray-900">
-                            <a href="#" className="hover:underline">
-                              Simon Young
-                            </a>
+                            Simon Young
                           </p>
                           <div className="flex text-sm leading-5 text-gray-500">
                             <Moment

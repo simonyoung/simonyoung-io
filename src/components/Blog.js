@@ -43,10 +43,7 @@ export default ({ allPosts, siteConfig }) => {
                         {blog.fields.post_title}
                       </h3>
                       <p className="mt-3 text-base leading-6 text-gray-500">
-                        Illo sint voluptas. Error voluptates culpa eligendi. Hic
-                        vel totam vitae illo. Non aliquid explicabo
-                        necessitatibus unde. Sed exercitationem placeat
-                        consectetur nulla deserunt vel. Iusto corrupti dicta.
+                        {blog.fields.content_preview}
                       </p>
                     </a>
                     <div className="mt-3">
@@ -54,7 +51,7 @@ export default ({ allPosts, siteConfig }) => {
                         href="#"
                         className="text-base leading-6 font-semibold text-indigo-600 hover:text-indigo-500 transition ease-in-out duration-150"
                       >
-                        Read full story
+                        Read more
                       </a>
                     </div>
                   </div>
