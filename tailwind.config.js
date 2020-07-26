@@ -7,6 +7,14 @@ module.exports = {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
+      colors: {
+        blue: {
+          twitter: '#1da1f2',
+        },
+        pink: {
+          instagram: '#c13584',
+        },
+      },
     },
   },
   purge: ['./src/**/*.js'],
