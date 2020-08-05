@@ -1,103 +1,123 @@
 import { useRouter } from 'next/router';
 import Moment from 'react-moment';
 import ReactMarkdown from 'react-markdown';
-import styled from 'styled-components';
-import colors from 'styles/colors';
-
-const PostHeroContainer = styled('div')`
-  max-height: 500px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  margin-bottom: 3em;
-  img {
-    width: 100%;
-  }
-`;
-
-const PostHeroAnnotation = styled('div')`
-  padding-top: 0.25em;
-  h6 {
-    text-align: right;
-    color: ${colors.grey600};
-    font-weight: 400;
-    font-size: 0.85rem;
-  }
-  a {
-    color: currentColor;
-  }
-`;
-
-const PostCategory = styled('div')`
-  max-width: 550px;
-  margin: 0 auto;
-  text-align: center;
-  font-weight: 600;
-  color: ${colors.grey600};
-  h5 {
-    margin-top: 0;
-    margin-bottom: 1em;
-  }
-`;
-
-const PostTitle = styled('div')`
-  max-width: 550px;
-  margin: 0 auto;
-  text-align: center;
-  h1 {
-    margin-top: 0;
-  }
-`;
-
-const PostBody = styled('div')`
-  max-width: 550px;
-  margin: 0 auto;
-  .block-img {
-    margin-top: 3.5em;
-    margin-bottom: 0.5em;
-    img {
-      width: 100%;
-    }
-  }
-`;
-
-const PostMetas = styled('div')`
-  max-width: 550px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  margin-bottom: 2em;
-  justify-content: space-between;
-  font-size: 0.85em;
-  color: ${colors.grey600};
-`;
-
-const PostAuthor = styled('div')`
-  margin: 0;
-`;
-
-const PostDate = styled('div')`
-  margin: 0;
-`;
 
 export default ({ title, data }) => {
   return (
-    <div>
-      <PostCategory>Category</PostCategory>
-      <PostTitle>
-        <h1>{data.fields.post_title}</h1>
-      </PostTitle>
-      <PostMetas>
-        <PostAuthor>author</PostAuthor>
-        <PostDate>
-          <Moment date={data.fields.post_date} format="DD MMM YYYY" />
-        </PostDate>
-      </PostMetas>
-
-      <PostBody>
-        <ReactMarkdown source={data.fields.post_content} />
-      </PostBody>
+    <div className="max-w-screen-xl mx-auto relative py-8 overflow-hidden">
+      <div className="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
+        <div className="relative h-full text-lg max-w-prose mx-auto">
+          <svg
+            className="absolute top-12 left-full transform translate-x-32"
+            width="404"
+            height="384"
+            fill="none"
+            viewBox="0 0 404 384"
+          >
+            <defs>
+              <pattern
+                id="74b3fd99-0a6f-4271-bef2-e80eeafdf357"
+                x="0"
+                y="0"
+                width="20"
+                height="20"
+                patternUnits="userSpaceOnUse"
+              >
+                <rect
+                  x="0"
+                  y="0"
+                  width="4"
+                  height="4"
+                  className="text-gray-200"
+                  fill="currentColor"
+                />
+              </pattern>
+            </defs>
+            <rect
+              width="404"
+              height="384"
+              fill="url(#74b3fd99-0a6f-4271-bef2-e80eeafdf357)"
+            />
+          </svg>
+          <svg
+            className="absolute top-1/2 right-full transform -translate-y-1/2 -translate-x-32"
+            width="404"
+            height="384"
+            fill="none"
+            viewBox="0 0 404 384"
+          >
+            <defs>
+              <pattern
+                id="f210dbf6-a58d-4871-961e-36d5016a0f49"
+                x="0"
+                y="0"
+                width="20"
+                height="20"
+                patternUnits="userSpaceOnUse"
+              >
+                <rect
+                  x="0"
+                  y="0"
+                  width="4"
+                  height="4"
+                  className="text-gray-200"
+                  fill="currentColor"
+                />
+              </pattern>
+            </defs>
+            <rect
+              width="404"
+              height="384"
+              fill="url(#f210dbf6-a58d-4871-961e-36d5016a0f49)"
+            />
+          </svg>
+          <svg
+            className="absolute bottom-12 left-full transform translate-x-32"
+            width="404"
+            height="384"
+            fill="none"
+            viewBox="0 0 404 384"
+          >
+            <defs>
+              <pattern
+                id="d3eb07ae-5182-43e6-857d-35c643af9034"
+                x="0"
+                y="0"
+                width="20"
+                height="20"
+                patternUnits="userSpaceOnUse"
+              >
+                <rect
+                  x="0"
+                  y="0"
+                  width="4"
+                  height="4"
+                  className="text-gray-200"
+                  fill="currentColor"
+                />
+              </pattern>
+            </defs>
+            <rect
+              width="404"
+              height="384"
+              fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)"
+            />
+          </svg>
+        </div>
+      </div>
+      <div className="relative px-4 sm:px-6 lg:px-8">
+        <div className="text-lg max-w-prose mx-auto mb-6">
+          <p className="text-base text-center leading-6 text-indigo-600 font-semibold tracking-wide uppercase">
+            <Moment date={data.fields.publish_date} format="DD MMM YYYY" />
+          </p>
+          <h1 className="mt-2 mb-8 text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+            {data.fields.post_title}
+          </h1>
+        </div>
+        <div className="prose prose-lg text-gray-500 mx-auto">
+          <ReactMarkdown source={data.fields.post_content} />
+        </div>
+      </div>
     </div>
   );
 };

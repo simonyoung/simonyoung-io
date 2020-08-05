@@ -17,6 +17,7 @@
   // Add the IDs of extensions you want installed when the container is created.
   "extensions": [
     "atomiks.moonlight",
+    "bradlc.vscode-tailwindcss",
     "dbaeumer.vscode-eslint",
     "eamodio.gitlens",
     "esbenp.prettier-vscode",
