@@ -6,16 +6,16 @@
   "license": "MIT",
   "dependencies": {
     "@tailwindcss/typography": "0.2.0",
-    "@tailwindcss/ui": "0.4.0",
+    "@tailwindcss/ui": "0.5.0",
     "contentful": "7.14.6",
     "moment": "2.27.0",
-    "next": "9.4.4",
+    "next": "9.5.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-markdown": "4.3.1",
     "react-moment": "0.9.7",
     "react-transition-group": "^4.4.1",
-    "tailwindcss": "1.5.2"
+    "tailwindcss": "1.7.0"
   },
   "scripts": {
     "dev": "next",

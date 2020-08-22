@@ -18,7 +18,7 @@ export async function getStaticProps() {
       allPosts: posts,
       ...siteConfig,
     },
-    unstable_revalidate: 1,
+    revalidate: 1,
   };
 }
 
