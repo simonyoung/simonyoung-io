@@ -24,8 +24,6 @@ const Header = () => {
               Blog
             </a>
           </Link>
-
-          <NavLink key="about" url="about" title="About" />
         </div>
       </header>
     </>
