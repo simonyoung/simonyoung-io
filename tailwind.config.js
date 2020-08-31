@@ -18,6 +18,10 @@ module.exports = {
           instagram: '#c13584',
         },
       },
+      opacity: {
+        '90': '0.9',
+        '95': '0.95',
+      },
     },
   },
   purge: ['./src/**/*.js'],

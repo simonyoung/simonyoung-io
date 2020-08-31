@@ -7,7 +7,7 @@ const BlogPostLink = (props) => (
   </Link>
 );
 
-export default ({ allPosts, siteConfig }) => {
+const HomePage = ({ allPosts, siteConfig }) => {
   return (
     <>
       <main className="max-w-screen-xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
@@ -134,3 +134,5 @@ export default ({ allPosts, siteConfig }) => {
     </>
   );
 };
+
+export default HomePage;

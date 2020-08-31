@@ -7,7 +7,7 @@ const NotePostLink = (props) => (
   </Link>
 );
 
-export default ({ allPosts, siteConfig }) => {
+const Note = ({ allPosts, siteConfig }) => {
   return (
     <>
       <div className="bg-yellow-100 max-w-screen-xl mx-auto py-8 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
@@ -57,3 +57,5 @@ export default ({ allPosts, siteConfig }) => {
     </>
   );
 };
+
+export default Note;
