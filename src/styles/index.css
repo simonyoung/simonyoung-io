@@ -4,3 +4,12 @@
 /* purgecss end ignore */
 
 @tailwind utilities;
+
+@layer base {
+  nav a {
+    @apply text-2xl font-medium text-gray-200;
+  }
+  nav a:hover {
+    @apply text-gray-500 underline;
+  }
+}

@@ -40,24 +40,16 @@ const NavBar = ({ isOpen, setIsOpen }) => {
             <div>
               <nav className="grid gap-6">
                 <Link href="/blog">
-                  <a className="text-2xl font-medium text-gray-200 hover:text-gray-500 hover:underline">
-                    Blog
-                  </a>
+                  <a>Blog</a>
                 </Link>
                 <Link href="/blog">
-                  <a className="text-base font-medium text-gray-200 hover:text-gray-500">
-                    Blog
-                  </a>
+                  <a>Blog</a>
                 </Link>
                 <Link href="/blog">
-                  <a className="text-base font-medium text-gray-200 hover:text-gray-500">
-                    Blog
-                  </a>
+                  <a>Blog</a>
                 </Link>
                 <Link href="/blog">
-                  <a className="text-base font-medium text-gray-200 hover:text-gray-500">
-                    Blog
-                  </a>
+                  <a>Blog</a>
                 </Link>
               </nav>
             </div>
