@@ -10,9 +10,25 @@ const Post = ({ title, data }) => {
           <h1 className="mt-2 mb-8 text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
             {data.fields.post_title}
           </h1>
-          <p className="text-base text-center leading-6 text-indigo-600 font-semibold tracking-wide uppercase">
-            <Moment date={data.fields.publish_date} format="DD MMM YYYY" />
-          </p>
+          <div>
+            <p className="text-base leading-6 pb-2 border-b w-max-content mx-auto tracking-wide uppercase font-medium">
+              <svg
+                class="h-6 w-6 relative "
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                />
+              </svg>
+              <Moment date={data.fields.publish_date} format="DD MMM YYYY" />
+            </p>
+          </div>
         </div>
         <div className="prose prose-lg text-gray-500 mx-auto">
           <ReactMarkdown source={data.fields.post_content} />

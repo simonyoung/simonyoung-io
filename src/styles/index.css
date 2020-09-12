@@ -12,4 +12,10 @@
   nav a:hover {
     @apply text-gray-500 underline;
   }
+  footer a {
+    @apply text-gray-500;
+  }
+  footer a:hover {
+    @apply text-gray-900;
+  }
 }
