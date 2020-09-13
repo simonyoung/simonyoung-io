@@ -18,4 +18,7 @@
   footer a:hover {
     @apply text-gray-900;
   }
+  .prose h2 {
+    @apply tracking-tighter;
+  }
 }

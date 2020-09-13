@@ -17,10 +17,14 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <header className="max-w-screen-xl mx-auto flex items-center justify-between flex-wrap py-4 px-4 sm:px-6 md:flex lg:px-8">
-        <Logo />
-        <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
+      <header>
+        <div className="container mx-auto flex flex-wrap p-2 pt-4 flex-row items-center">
+          <div className="flex w-2/5 flex-wrap items-center text-base ml-auto"></div>
+          <Logo />
+          <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
+        </div>
       </header>
+
       <NavBar isOpen={isOpen} setIsOpen={setIsOpen} />
     </>
   );

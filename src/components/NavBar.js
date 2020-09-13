@@ -39,17 +39,14 @@ const NavBar = ({ isOpen, setIsOpen }) => {
             </div>
             <div>
               <nav className="grid gap-6">
-                <Link href="/blog">
-                  <a>Blog</a>
+                <Link href="/">
+                  <a onClick={() => setIsOpen(!isOpen)}>Home</a>
                 </Link>
                 <Link href="/blog">
-                  <a>Blog</a>
+                  <a onClick={() => setIsOpen(!isOpen)}>Blog</a>
                 </Link>
-                <Link href="/blog">
-                  <a>Blog</a>
-                </Link>
-                <Link href="/blog">
-                  <a>Blog</a>
+                <Link href="/about">
+                  <a onClick={() => setIsOpen(!isOpen)}>About</a>
                 </Link>
               </nav>
             </div>
