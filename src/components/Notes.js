@@ -7,7 +7,7 @@ const NotePostLink = (props) => (
   </Link>
 );
 
-export default ({ allPosts, siteConfig }) => {
+const Note = ({ allPosts, siteConfig }) => {
   return (
     <>
       <div className="bg-yellow-100 max-w-screen-xl mx-auto py-8 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
@@ -23,7 +23,7 @@ export default ({ allPosts, siteConfig }) => {
             </div>
           </div>
 
-          <div className="mt-6 grid gap-16 border-t-2 border-gray-100 pt-10 lg:grid-cols-2 lg:col-gap-5 lg:row-gap-12">
+          <div className="mt-6 grid gap-16 border-t-2 border-gray-100 pt-10 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
             {allPosts &&
               allPosts.map((blog, index) => (
                 <NotePostLink
@@ -57,3 +57,5 @@ export default ({ allPosts, siteConfig }) => {
     </>
   );
 };
+
+export default Note;

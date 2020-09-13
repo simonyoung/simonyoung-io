@@ -2,13 +2,17 @@ import Link from 'next/link';
 
 const Logo = () => {
   return (
-    <div className="text-4xl text-center leading-9 pb-4 font-extrabold text-gray-900 tracking-tight md:pb-0 sm:leading-10 md:text-4xl md:leading-14 md:text-left">
-      <h1>
+    <>
+      <div className="flex order-none w-1/5  items-center text-gray-900 justify-center mb-0">
         <Link href="/">
-          <a>Simon Young</a>
+          <a>
+            <span className="block p-6 border-gray-400 hover:border-gray-500 border-4 rounded-full title-font text-6xl font-extrabold text-gray-400 hover:text-gray-500 bg-gray-200 hover:bg-gray-300 text-center leading-10">
+              S
+            </span>
+          </a>
         </Link>
-      </h1>
-    </div>
+      </div>
+    </>
   );
 };
 export default Logo;

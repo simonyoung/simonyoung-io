@@ -4,3 +4,21 @@
 /* purgecss end ignore */
 
 @tailwind utilities;
+
+@layer base {
+  nav a {
+    @apply text-2xl font-medium text-gray-200;
+  }
+  nav a:hover {
+    @apply text-gray-500 underline;
+  }
+  footer a {
+    @apply text-gray-500;
+  }
+  footer a:hover {
+    @apply text-gray-900;
+  }
+  .prose h2 {
+    @apply tracking-tighter;
+  }
+}

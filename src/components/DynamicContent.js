@@ -2,7 +2,7 @@ import { useRouter } from 'next/router';
 import ReactMarkdown from 'react-markdown';
 import Moment from 'react-moment';
 
-export default ({ title, data }) => {
+const DynamicContent = ({ title, data }) => {
   return (
     <div className="overflow-hidden max-w-screen-xl mx-auto md-flex py-8 px-4 sm:px-6 lg:px-8">
       <div className="relative max-w-7xl mx-auto ">
@@ -48,9 +48,7 @@ export default ({ title, data }) => {
             </svg>
             <div className="relative text-base mx-auto max-w-prose lg:max-w-none">
               <figure>
-                <div className="relative pb-7/12 lg:pb-0">
-                  
-                </div>
+                <div className="relative pb-7/12 lg:pb-0"></div>
                 <figcaption className="flex mt-3 text-sm text-gray-500">
                   <svg
                     className="flex-none w-5 h-5 mr-2 text-gray-400"
@@ -85,3 +83,5 @@ export default ({ title, data }) => {
     </div>
   );
 };
+
+export default DynamicContent;

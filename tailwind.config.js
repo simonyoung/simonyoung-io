@@ -2,18 +2,17 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
+  future: {
+    removeDeprecatedGapUtilities: true,
+  },
   theme: {
     extend: {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
-      colors: {
-        blue: {
-          twitter: '#1da1f2',
-        },
-        pink: {
-          instagram: '#c13584',
-        },
+      opacity: {
+        '90': '0.9',
+        '95': '0.95',
       },
     },
   },

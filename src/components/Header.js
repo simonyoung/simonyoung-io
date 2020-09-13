@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import Logo from 'components/Logo';
+import Hamburger from 'components/Hamburger';
+import NavBar from 'components/NavBar';
+import { Transition } from '@tailwindui/react';
 import { useState } from 'react';
-import Transition from 'components/Transition';
 
 const NavLink = (props) => (
   <Link href="/[slug]" as={`/${props.url}`}>
@@ -15,17 +17,15 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <header className="max-w-screen-xl mx-auto py-8 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
-        <Logo />
-
-        <div className="md:flex items-center text-center space-x-8 md:text-justify">
-          <Link href="/blog">
-            <a className="font-medium text-gray-500 hover:text-gray-700">
-              Blog
-            </a>
-          </Link>
+      <header>
+        <div className="container mx-auto flex flex-wrap p-2 pt-4 flex-row items-center">
+          <div className="flex w-2/5 flex-wrap items-center text-base ml-auto"></div>
+          <Logo />
+          <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
       </header>
+
+      <NavBar isOpen={isOpen} setIsOpen={setIsOpen} />
     </>
   );
 };
