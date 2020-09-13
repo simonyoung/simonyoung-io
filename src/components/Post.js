@@ -16,7 +16,7 @@ const Post = ({ title, data }) => {
             </p>
             <p className="align-items inline-block px-2">
               <svg
-                class="h-6 w-6 my-2 relative inline-block"
+                className="h-6 w-6 my-2 relative inline-block"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -36,6 +36,13 @@ const Post = ({ title, data }) => {
               />
             </p>
           </div>
+        </div>
+        <div>
+          <img
+            className="object-cover w-full sm:w-4/5 mx-auto pt-4 pb-10"
+            src="https://images.unsplash.com/photo-1511576661531-b34d7da5d0bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+            alt=""
+          />
         </div>
         <div className="prose prose-lg text-gray-500 mx-auto">
           <ReactMarkdown source={data.fields.post_content} />

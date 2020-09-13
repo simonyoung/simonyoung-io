@@ -14,7 +14,7 @@ const HomePage = ({ allPosts, siteConfig }) => {
     <>
       <Headline />
 
-      <div className="max-w-screen-xl mx-auto relative py-4 overflow-hidden">
+      <div className="max-w-screen-xl mx-auto relative pb-4 overflow-hidden">
         {allPosts &&
           allPosts.map((blog, index) => (
             <BlogPostLink
@@ -32,7 +32,7 @@ const HomePage = ({ allPosts, siteConfig }) => {
                     </p>
                     <p className="align-items inline-block px-2">
                       <svg
-                        class="h-6 w-6 my-2 relative inline-block"
+                        className="h-6 w-6 my-2 relative inline-block"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
@@ -64,7 +64,9 @@ const HomePage = ({ allPosts, siteConfig }) => {
                   <ReactMarkdown source={blog.fields.content_preview} />
                   <p>
                     <a>
-                      <span className="text-gray-600 underline">Read more</span>
+                      <span className="text-gray-600 hover:text-gray-800 underline">
+                        Read more
+                      </span>
                     </a>
                   </p>
                 </div>
