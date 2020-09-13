@@ -2,8 +2,8 @@ import Link from 'next/link';
 import Headline from 'components/Headline';
 import PostTitle from 'components/PostTitle';
 import PostMeta from 'components/PostMeta';
-import Moment from 'react-moment';
-import ReactMarkdown from 'react-markdown';
+import PostImage from 'components/PostImage';
+import PostContent from 'components/PostContent';
 
 const BlogPostLink = (props) => (
   <Link href="/blog/[slug]" as={`/blog/${props.url}`} passHref>
@@ -12,6 +12,7 @@ const BlogPostLink = (props) => (
 );
 
 const HomePage = ({ allPosts, siteConfig }) => {
+  const isPreview = true;
   return (
     <>
       <Headline />
@@ -27,33 +28,13 @@ const HomePage = ({ allPosts, siteConfig }) => {
                 <div className="text-lg max-w-prose mx-auto ">
                   <PostTitle title={blog.fields.post_title} />
                   <PostMeta date={blog.fields.publish_date} />
-
                 </div>
-                <div>
-                  <img
-                    className="object-cover w-full sm:w-4/5 mx-auto py-10"
-                    src="https://images.unsplash.com/photo-1511576661531-b34d7da5d0bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
-                    alt=""
-                  />
-                </div>
-                <div className="prose prose-lg text-gray-500 mx-auto pb-10">
-
-                <div>
-      {blog.fields.content_preview
-        ? <div>
-            <ReactMarkdown source={blog.fields.content_preview} />
-            <p>
-              <a>
-                <span className="text-gray-600 hover:text-gray-800 underline">
-                  Read more
-                </span>
-              </a>
-            </p>
-          </div>
-        : <ReactMarkdown source={blog.fields.post_content} />
-      }
-    </div>
-                </div>
+                <PostImage />
+                <PostContent
+                  preview={blog.fields.content_preview}
+                  content={blog.fields.post_content}
+                  isPreview={isPreview}
+                />
                 <hr />
               </div>
             </BlogPostLink>
