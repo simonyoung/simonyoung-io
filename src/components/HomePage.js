@@ -29,13 +29,13 @@ const HomePage = ({ allPosts, siteConfig }) => {
                   <PostTitle title={blog.fields.post_title} />
                   <PostMeta date={blog.fields.publish_date} />
                 </div>
-                <PostImage />
+
                 <PostContent
                   preview={blog.fields.content_preview}
                   content={blog.fields.post_content}
                   isPreview={isPreview}
                 />
-                <hr />
+                <hr className="mb-12" />
               </div>
             </BlogPostLink>
           ))}
