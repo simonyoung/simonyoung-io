@@ -13,7 +13,7 @@ const Post = ({ title, data }) => {
           <PostTitle title={data.fields.post_title} />
           <PostMeta date={data.fields.publish_date} />
         </div>
-        <PostImage />
+
         <PostContent
           preview={data.fields.content_preview}
           content={data.fields.post_content}
