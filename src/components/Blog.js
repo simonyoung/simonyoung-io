@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Moment from 'react-moment';
 
 const BlogPostLink = (props) => (
-  <Link href="/blog/[slug]" as={`/blog/${props.url}`} passHref>
+  <Link href={`/blog/${props.url}`}>
     {props.children}
   </Link>
 );
