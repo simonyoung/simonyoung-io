@@ -4,7 +4,7 @@ import Head from 'next/head';
 
 const Layout = ({ children }) => {
   return (
-    <React.Fragment>
+    <>
       <div className="divide-y divide-gray-200 border-gray-400 border-t-8">
         <Head>
           <title>Simon Young</title>
@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
           <Footer />
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 
