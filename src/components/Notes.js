@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Moment from 'react-moment';
 
 const NotePostLink = (props) => (
-  <Link href="/notes/[slug]" as={`/notes/${props.url}`} passHref>
+  <Link href={`/notes/${props.url}`}>
     {props.children}
   </Link>
 );

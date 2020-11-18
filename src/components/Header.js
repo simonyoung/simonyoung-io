@@ -6,7 +6,7 @@ import { Transition } from '@tailwindui/react';
 import { useState } from 'react';
 
 const NavLink = (props) => (
-  <Link href="/[slug]" as={`/${props.url}`}>
+  <Link href={`/${props.url}`}>
     <a className="font-medium text-gray-500 hover:text-gray-700">
       {props.title}
     </a>

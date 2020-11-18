@@ -6,7 +6,7 @@ import PostImage from 'components/PostImage';
 import PostContent from 'components/PostContent';
 
 const BlogPostLink = (props) => (
-  <Link href="/blog/[slug]" as={`/blog/${props.url}`} passHref>
+  <Link href={`/blog/${props.url}`}>
     {props.children}
   </Link>
 );
