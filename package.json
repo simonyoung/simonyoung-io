@@ -9,7 +9,7 @@
     "@tailwindcss/ui": "^0.7.2",
     "@tailwindui/react": "^0.1.1",
     "autoprefixer": "^10.0.2",
-    "contentful": "^8.1.4",
+    "contentful": "^7.4.13",
     "moment": "^2.29.1",
     "next": "^10.0.2",
     "postcss": "^8.1.7",
