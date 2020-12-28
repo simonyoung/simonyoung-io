@@ -1,10 +1,8 @@
-import { useRouter } from 'next/router';
 import PostTitle from 'components/PostTitle';
 import PostMeta from 'components/PostMeta';
-import PostImage from 'components/PostImage';
 import PostContent from 'components/PostContent';
 
-const Post = ({ title, data }) => {
+const Post = ({ data }) => {
   const isPreview = false;
   return (
     <div className="max-w-screen-xl mx-auto relative py-4 overflow-hidden">
