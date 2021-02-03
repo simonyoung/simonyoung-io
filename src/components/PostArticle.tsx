@@ -1,9 +1,9 @@
 import { IPostFields } from 'interfaces';
 
-const PostArticle = ({ page_title, description }: IPostFields) => {
+const PostArticle = ({ post_title, description }: IPostFields) => {
   return (
     <article>
-      <h1>{page_title}</h1>
+      <h1>{post_title}</h1>
       {description && <p>{description}</p>}
     </article>
   );
