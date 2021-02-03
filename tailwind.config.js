@@ -11,8 +11,10 @@ module.exports = {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
       opacity: {
-        '90': '0.9',
-        '95': '0.95',
+        // eslint-disable-next-line prettier/prettier
+        90: '0.9',
+        // eslint-disable-next-line prettier/prettier
+        95: '0.95',
       },
     },
   },

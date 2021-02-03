@@ -40,11 +40,7 @@ const DynamicContent = ({ title, data }) => {
                   />
                 </pattern>
               </defs>
-              <rect
-                width="404"
-                height="384"
-                fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)"
-              />
+              <rect width="404" height="384" fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)" />
             </svg>
             <div className="relative text-base mx-auto max-w-prose lg:max-w-none">
               <figure>
@@ -69,9 +65,8 @@ const DynamicContent = ({ title, data }) => {
           <div>
             <div className="text-base max-w-prose mx-auto lg:max-w-none">
               <p className="text-lg leading-7 text-gray-500 mb-5">
-                Sagittis scelerisque nulla cursus in enim consectetur quam.
-                Dictum urna sed consectetur neque tristique pellentesque.
-                Blandit amet, sed aenean erat arcu morbi.
+                Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed
+                consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi.
               </p>
             </div>
             <div className="prose text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">

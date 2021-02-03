@@ -11,7 +11,7 @@ const PostPage = ({ siteTitle, data }) => {
 };
 
 export async function getStaticPaths() {
-  const posts = await getContent(process.env.CONTENTFUL_NOTE_CONTENT_TYPE);
+  const posts = await getContent(process.env.CONTENTFUL_BLOG_CONTENT_TYPE);
 
   const paths = posts.map((post) => ({
     params: { slug: post.fields.slug },
@@ -23,10 +23,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const siteConfig = await import(`data/config.json`);
 
-  const data = await getContentBySlug(
-    params.slug,
-    process.env.CONTENTFUL_NOTE_CONTENT_TYPE
-  );
+  const data = await getContentBySlug(params.slug, process.env.CONTENTFUL_BLOG_CONTENT_TYPE);
 
   return {
     props: {

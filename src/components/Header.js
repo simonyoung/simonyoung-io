@@ -7,9 +7,7 @@ import { useState } from 'react';
 
 const NavLink = (props) => (
   <Link href={`/${props.url}`}>
-    <a className="font-medium text-gray-500 hover:text-gray-700">
-      {props.title}
-    </a>
+    <a className="font-medium text-gray-500 hover:text-gray-700">{props.title}</a>
   </Link>
 );
 

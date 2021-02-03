@@ -5,22 +5,19 @@ const Headline = () => {
     <>
       <main className="max-w-screen-xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 md:block sm:text-5xl sm:leading-none md:text-6xl">
+          <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-gray-300 md:block sm:text-5xl sm:leading-none md:text-6xl">
             Hello, I'm
             <br className="xl:hidden" />
-            <span className="text-gray-400"> Simon Young</span>.
+            <span className="text-pink-500"> Simon Young</span>.
           </h2>
-          <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+          <p className="mt-3 max-w-md mx-auto text-base text-gray-300 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
             I'm a software engineering leader based in London.
             <br /> Sometimes I <a href="#">speak at conferences</a>. I'm also a{' '}
             <a href="#">photographer</a>.
           </p>
         </div>
         <div className="mt-8 flex justify-center">
-          <a
-            href="https://github.com/simonyoung"
-            className="text-gray-400 hover:text-gray-500"
-          >
+          <a href="https://github.com/simonyoung" className="text-gray-300 hover:text-pink-500">
             <span className="sr-only">GitHub</span>
             <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
               <path
@@ -30,10 +27,7 @@ const Headline = () => {
               />
             </svg>
           </a>
-          <a
-            href="https://twitter.com/simon180"
-            className="ml-6 text-gray-400 hover:text-gray-500"
-          >
+          <a href="https://twitter.com/simon180" className="ml-6 text-gray-300 hover:text-pink-500">
             <span className="sr-only">Twitter</span>
             <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
               <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
@@ -41,7 +35,7 @@ const Headline = () => {
           </a>
           <a
             href="https://instagram.com/simonyoungphotos"
-            className="ml-6 text-gray-400 hover:text-gray-500"
+            className="ml-6 text-gray-300 hover:text-pink-500"
           >
             <span className="sr-only">Instagram</span>
             <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">

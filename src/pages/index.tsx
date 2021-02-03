@@ -1,24 +1,23 @@
-import { getContent } from 'helpers/contentful';
-import HomePage from 'components/HomePage';
 import { GetStaticProps } from 'next';
+import { requestPosts } from '@/services/contentful';
+import HomePage from '@/components/HomePage';
+import { IPost } from '@/interfaces';
 
-const Index = ({ siteConfig, allPosts }) => (
-  <HomePage allPosts={allPosts} siteConfig={siteConfig} />
-);
+type Props = {
+  posts: IPost[];
+};
 
-export const getStaticProps: GetStaticProps = async (context) => {
-  const siteConfig = await import(`data/config.json`);
-  const posts = await getContent(
-    process.env.CONTENTFUL_BLOG_CONTENT_TYPE,
-    '-fields.publish_date',
-    3
-  );
+const Index = ({ posts }: Props) => {
+  return <HomePage posts={posts} />;
+};
+
+export const getStaticProps: GetStaticProps = async () => {
+  const posts = await requestPosts();
+  console.log(posts);
   return {
     props: {
-      allPosts: posts,
-      ...siteConfig,
+      posts,
     },
-    revalidate: 1,
   };
 };
 

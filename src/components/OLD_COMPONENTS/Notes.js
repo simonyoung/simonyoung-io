@@ -1,11 +1,7 @@
 import Link from 'next/link';
 import Moment from 'react-moment';
 
-const NotePostLink = (props) => (
-  <Link href={`/notes/${props.url}`}>
-    {props.children}
-  </Link>
-);
+const NotePostLink = (props) => <Link href={`/notes/${props.url}`}>{props.children}</Link>;
 
 const Note = ({ allPosts, siteConfig }) => {
   return (
@@ -26,16 +22,10 @@ const Note = ({ allPosts, siteConfig }) => {
           <div className="mt-6 grid gap-16 border-t-2 border-gray-100 pt-10 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
             {allPosts &&
               allPosts.map((blog, index) => (
-                <NotePostLink
-                  key={`${blog.fields.slug}-${index}`}
-                  url={blog.fields.slug}
-                >
+                <NotePostLink key={`${blog.fields.slug}-${index}`} url={blog.fields.slug}>
                   <div>
                     <p className="text-sm leading-5 text-gray-500">
-                      <Moment
-                        date={blog.fields.publish_date}
-                        format="DD MMM YYYY"
-                      />
+                      <Moment date={blog.fields.publish_date} format="DD MMM YYYY" />
                     </p>
                     <a
                       href="#"

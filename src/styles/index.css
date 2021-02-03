@@ -6,6 +6,9 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    @apply bg-pink-200;
+  }
   nav a {
     @apply text-2xl font-medium text-gray-200;
   }
