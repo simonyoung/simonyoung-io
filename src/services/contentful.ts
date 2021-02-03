@@ -18,5 +18,5 @@ function getContents<T>(contentType: string, queries?: unknown): Promise<T[]> {
 }
 
 export function requestPosts(): Promise<IPost[]> {
-  return getContents<IPost>(process.env.CONTENTFUL_BLOG_CONTENT_TYPE).then((post: IPost[]) => post);
+  return getContents<IPost>('post').then((post: IPost[]) => post);
 }
