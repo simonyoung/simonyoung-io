@@ -1,7 +1,7 @@
 import { Entry } from 'contentful';
 
 export interface IPostFields {
-  page_title: string;
+  post_title: string;
   slug: string;
   description?: string | undefined;
   date: string;
