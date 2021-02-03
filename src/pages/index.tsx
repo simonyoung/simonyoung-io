@@ -13,7 +13,6 @@ const Index = ({ posts }: Props) => {
 
 export const getStaticProps: GetStaticProps = async () => {
   const posts = await requestPosts();
-  console.log(posts);
   return {
     props: {
       posts,
