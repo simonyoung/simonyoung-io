@@ -8,7 +8,7 @@ import PostContent from 'components/PostContent';
 */
 
 import PostPreview from '@/components/PostPreview';
-import { IPost } from '@/interfaces';
+import { IPost } from 'interfaces';
 
 type Props = {
   posts: IPost[];

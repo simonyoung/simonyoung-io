@@ -1,5 +1,5 @@
 import { getContent } from 'helpers/contentful';
-import Blog from 'components/Blog';
+import Blog from '@/components/Blog';
 import { GetStaticPropsResult } from 'next';
 
 interface Props {

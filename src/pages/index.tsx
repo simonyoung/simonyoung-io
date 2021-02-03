@@ -1,7 +1,7 @@
 import { GetStaticProps } from 'next';
 import { requestPosts } from '@/services/contentful';
 import HomePage from '@/components/HomePage';
-import { IPost } from '@/interfaces';
+import { IPost } from 'interfaces';
 
 type Props = {
   posts: IPost[];

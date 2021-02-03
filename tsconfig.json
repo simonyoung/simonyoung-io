@@ -16,13 +16,12 @@
     "noUnusedParameters": true,
     "paths": {
       "@/components/*": ["components/*"],
-      "@/interfaces/*": ["interfaces/*"],
       "@/services/*": ["services/*"]
     },
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "esnext",
+    "target": "esnext"
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
