@@ -24,5 +24,5 @@
     "target": "esnext"
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"], "src/pages/OLD_FILES/*.txt"
+  "exclude": ["node_modules"]
 }
