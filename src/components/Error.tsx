@@ -1,5 +1,3 @@
-import Layout from './Layout';
-
 type Props = {
   errors?: string;
 };
