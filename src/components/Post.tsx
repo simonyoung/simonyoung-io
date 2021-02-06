@@ -1,5 +1,4 @@
-import Link from 'next/link';
-import PostTitle from '@/components/Post/PostTitle';
+import { PostTitle } from '@/components/Post/PostTitle';
 import PostMeta from '@/components/Post/PostMeta';
 import PostContent from '@/components/Post/PostContent';
 import { IPostFields } from 'interfaces';
@@ -17,13 +16,14 @@ const Post = ({
       <div className="text-lg max-w-prose mx-auto ">
         <PostTitle title={post_title} slug={slug} />
         <PostMeta date={publish_date} />
-        <Link href="/blog/[slug]" as={`/blog/${slug}`}>
-          {post_title}
-        </Link>
       </div>
     </div>
-    {isPreview ? <h3>preview</h3> : <h3>content</h3>}
-    <PostContent preview={content_preview} content={post_content} isPreview={isPreview} />
+    <PostContent
+      preview={content_preview}
+      content={post_content}
+      isPreview={isPreview}
+      slug={slug}
+    />
   </>
 );
 
