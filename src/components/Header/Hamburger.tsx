@@ -1,6 +1,3 @@
-import { Transition } from '@tailwindui/react';
-import { useState } from 'react';
-
 const Hamburger = ({ isOpen, setIsOpen }) => {
   return (
     <>

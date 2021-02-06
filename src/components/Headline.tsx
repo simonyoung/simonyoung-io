@@ -1,19 +1,16 @@
-import Link from 'next/link';
-
 const Headline = () => {
   return (
     <>
       <main className="max-w-screen-xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-gray-300 md:block sm:text-5xl sm:leading-none md:text-6xl">
-            Hello, I'm
+            Hello, I&apos;m
             <br className="xl:hidden" />
             <span className="text-pink-500"> Simon Young</span>.
           </h2>
           <p className="mt-3 max-w-md mx-auto text-base text-gray-300 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-            I'm a software engineering leader based in London.
-            <br /> Sometimes I <a href="#">speak at conferences</a>. I'm also a{' '}
-            <a href="#">photographer</a>.
+            I am a software engineering leader based in London.
+            <br /> Sometimes I speak at conferences. I am also a photographer.
           </p>
         </div>
         <div className="mt-8 flex justify-center">

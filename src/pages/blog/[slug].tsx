@@ -1,7 +1,7 @@
 import { GetStaticProps, GetStaticPaths } from 'next';
 import { requestPosts } from '@/services/contentful';
 import Error from '@/components/Error';
-import PostArticle from '@/components/PostArticle';
+import Post from '@/components/Post';
 import { IPostFields } from 'interfaces';
 
 type Props = {
@@ -12,7 +12,7 @@ type Props = {
 const PostBySlug = ({ post, errors }: Props) => {
   if (errors) return <Error errors={errors} />;
 
-  return post && <PostArticle {...post} />;
+  return post && <Post {...post} />;
 };
 
 export default PostBySlug;

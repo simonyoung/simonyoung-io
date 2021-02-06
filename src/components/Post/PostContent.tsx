@@ -7,6 +7,7 @@ const PostContent = ({ preview, content, isPreview }) => {
         <div>
           {preview && isPreview ? (
             <div>
+              preview
               <ReactMarkdown source={preview} />
               <p>
                 <a>

@@ -3,8 +3,9 @@ import { Entry } from 'contentful';
 export interface IPostFields {
   post_title: string;
   slug: string;
-  description?: string | undefined;
-  date: string;
+  content_preview?: string | undefined;
+  post_content?: string | undefined;
+  publish_date: string;
 }
 
 export interface IPost extends Entry<IPostFields> {

@@ -1,11 +1,11 @@
-import Header from 'components/Header';
-import Footer from 'components/Footer';
+import Header from '@/components/Header/Header';
+import Footer from '@/components/Footer/Footer';
 import Head from 'next/head';
 
 const Layout = ({ children }) => {
   return (
     <>
-      <div className="divide-y divide-gray-200 border-pink-600 border-t-8">
+      <div className="divide-y divide-gray-200 border-gray-600 border-t-8">
         <Head>
           <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
         </Head>

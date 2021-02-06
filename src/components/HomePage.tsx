@@ -7,20 +7,39 @@ import PostMeta from 'components/PostMeta';
 import PostContent from 'components/PostContent';
 */
 
-import PostPreview from '@/components/PostPreview';
+import Headline from '@/components/Headline';
+import Post from '@/components/Post';
 import { IPost } from 'interfaces';
+import { NextSeo } from 'next-seo';
 
 type Props = {
   posts: IPost[];
 };
 
-const Posts = ({ posts }: Props) => (
-  <>
-    {posts.map((post: any, index: number) => {
-      return <PostPreview key={index} {...post} />;
-    })}
-  </>
-);
+const Posts = ({ posts }: Props) => {
+  const isPreview = true;
+  return (
+    <>
+      <NextSeo
+        title="Home"
+        openGraph={{
+          title: 'home',
+          description: 'homepage; a list of posts',
+        }}
+      />
+      <Headline />
+      <div className="max-w-screen-xl mx-auto relative pb-4 overflow-hidden">
+        {posts.map((post: any, index: number) => {
+          return (
+            <>
+              <Post isPreview={isPreview} key={index} {...post} />;
+            </>
+          );
+        })}
+      </div>
+    </>
+  );
+};
 
 export default Posts;
 
@@ -38,7 +57,7 @@ const HomePage = ({ allPosts }) => {
           description: 'homepage; a list of posts',
         }}
       />
-      <Headline />
+
 
       <div className="max-w-screen-xl mx-auto relative pb-4 overflow-hidden">
         {allPosts &&
