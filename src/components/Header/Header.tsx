@@ -1,6 +1,6 @@
-import Logo from '@/components/Header/Logo';
-import Hamburger from '@/components/Header/Hamburger';
-import NavBar from '@/components/Header/NavBar';
+import { Logo } from '@/components/Header/Logo';
+import { Hamburger } from '@/components/Header/Hamburger';
+import { NavBar } from '@/components/Header/NavBar';
 import { useState } from 'react';
 
 const Header = () => {

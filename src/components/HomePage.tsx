@@ -8,7 +8,7 @@ import PostContent from 'components/PostContent';
 */
 
 import Headline from '@/components/Headline';
-import Post from '@/components/Post';
+import { Post } from '@/components/Post';
 import { IPost } from 'interfaces';
 import { NextSeo } from 'next-seo';
 
@@ -31,9 +31,9 @@ const Posts = ({ posts }: Props) => {
       <div className="max-w-screen-xl mx-auto relative pb-4 overflow-hidden">
         {posts.map((post: any, index: number) => {
           return (
-            <>
-              <Post isPreview={isPreview} key={index} {...post} />;
-            </>
+            <div key={index}>
+              <Post isPreview={isPreview} {...post} />;
+            </div>
           );
         })}
       </div>

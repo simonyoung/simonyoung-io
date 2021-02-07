@@ -1,16 +1,25 @@
+import { FunctionComponent } from 'react';
 import { PostTitle } from '@/components/Post/PostTitle';
-import PostMeta from '@/components/Post/PostMeta';
-import PostContent from '@/components/Post/PostContent';
+import { PostMeta } from '@/components/Post/PostMeta';
+import { PostContent } from '@/components/Post/PostContent';
 import { IPostFields } from 'interfaces';
 
-const Post = ({
+type PostProps = {
+  post_title: string;
+  publish_date: string;
+  content_preview: string;
+  post_content: string;
+  slug: string;
+};
+
+export const Post: FunctionComponent<PostProps> = ({
   post_title,
   publish_date,
   content_preview,
   post_content,
   slug,
   isPreview,
-}: IPostFields) => (
+}) => (
   <>
     <div className="relative px-4 sm:px-6 lg:px-8">
       <div className="text-lg max-w-prose mx-auto ">
@@ -26,5 +35,3 @@ const Post = ({
     />
   </>
 );
-
-export default Post;

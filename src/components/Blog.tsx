@@ -1,4 +1,4 @@
-import Post from '@/components/Post';
+import { Post } from '@/components/Post';
 import { IPost } from 'interfaces';
 
 type Props = {
@@ -6,7 +6,6 @@ type Props = {
 };
 
 const Blog = ({ posts }: Props) => {
-  console.log(posts);
   const isPreview = true;
   return (
     <>
@@ -25,9 +24,9 @@ const Blog = ({ posts }: Props) => {
           <div className="mt-6 grid gap-16 border-t-2 border-gray-100 pt-10 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
             {posts.map((post: any, index: number) => {
               return (
-                <>
+                <div key={index}>
                   <Post isPreview={isPreview} key={index} {...post} />;
-                </>
+                </div>
               );
             })}
           </div>

@@ -1,6 +1,7 @@
 import Link from 'next/link';
+import { ReactElement } from 'react';
 
-const Logo = () => {
+export const Logo: React.FC = (): ReactElement => {
   return (
     <>
       <div className="flex order-none w-1/5  items-center text-gray-900 justify-center mb-0">
@@ -15,4 +16,3 @@ const Logo = () => {
     </>
   );
 };
-export default Logo;

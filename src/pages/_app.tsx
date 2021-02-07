@@ -3,7 +3,7 @@ import type { AppProps } from 'next/app';
 import { DefaultSeo } from 'next-seo';
 
 import PageHead from 'components/PageHead';
-import Layout from 'components/Layout';
+import { Layout } from 'components/Layout';
 import { SITE_NAME, SITE_URL } from 'lib/constants';
 
 import 'styles/index.css';

@@ -1,7 +1,7 @@
 import { GetStaticProps, GetStaticPaths } from 'next';
 import { requestPosts } from '@/services/contentful';
 import Error from '@/components/Error';
-import Post from '@/components/Post';
+import { Post } from '@/components/Post';
 import { IPostFields } from 'interfaces';
 
 type Props = {
