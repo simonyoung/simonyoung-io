@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /*
 import Link from 'next/link';
 import { NextSeo } from 'next-seo';
@@ -16,6 +17,7 @@ type Props = {
   posts: IPost[];
 };
 
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 const Posts = ({ posts }: Props) => {
   const isPreview = true;
   return (

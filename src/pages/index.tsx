@@ -7,6 +7,7 @@ type Props = {
   posts: IPost[];
 };
 
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 const Index = ({ posts }: Props) => {
   return <HomePage posts={posts} />;
 };

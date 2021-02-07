@@ -8,6 +8,7 @@ export const Hamburger: React.FC<HamburgerProps> = ({ isOpen, setIsOpen }) => (
     <div className="w-2/5 inline-flex justify-end ml-0 ">
       <button
         type="button"
+        // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center px-3 py-2 text-gray-500 hover:text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500"
       >

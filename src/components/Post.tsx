@@ -2,7 +2,6 @@ import { FunctionComponent } from 'react';
 import { PostTitle } from '@/components/Post/PostTitle';
 import { PostMeta } from '@/components/Post/PostMeta';
 import { PostContent } from '@/components/Post/PostContent';
-import { IPostFields } from 'interfaces';
 
 type PostProps = {
   post_title: string;
@@ -10,6 +9,7 @@ type PostProps = {
   content_preview: string;
   post_content: string;
   slug: string;
+  isPreview: boolean;
 };
 
 export const Post: FunctionComponent<PostProps> = ({

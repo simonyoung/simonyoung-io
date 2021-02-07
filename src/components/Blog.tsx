@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Post } from '@/components/Post';
 import { IPost } from 'interfaces';
 
@@ -5,6 +6,7 @@ type Props = {
   posts: IPost[];
 };
 
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 const Blog = ({ posts }: Props) => {
   const isPreview = true;
   return (

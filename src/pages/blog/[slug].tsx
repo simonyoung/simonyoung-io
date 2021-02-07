@@ -2,13 +2,14 @@ import { GetStaticProps, GetStaticPaths } from 'next';
 import { requestPosts } from '@/services/contentful';
 import Error from '@/components/Error';
 import { Post } from '@/components/Post';
-import { IPostFields } from 'interfaces';
+import { IPost } from 'interfaces';
 
 type Props = {
-  post?: IPostFields;
+  post?: IPost[];
   errors?: string;
 };
 
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 const PostBySlug = ({ post, errors }: Props) => {
   if (errors) return <Error errors={errors} />;
 
@@ -20,6 +21,7 @@ export default PostBySlug;
 export const getStaticPaths: GetStaticPaths = async () => {
   const posts = await requestPosts();
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const paths = posts.map((post: any) => ({
     params: { slug: post.slug },
   }));
@@ -32,6 +34,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
   try {
     const slug = params?.slug;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const post = posts.filter((data: any) => data.slug === slug);
 
     return {

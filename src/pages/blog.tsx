@@ -7,6 +7,7 @@ type Props = {
   posts: IPost[];
 };
 
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 const BlogPage = ({ posts }: Props) => {
   return <Blog posts={posts} />;
 };

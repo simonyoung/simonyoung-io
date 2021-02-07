@@ -3,6 +3,7 @@ import { Hamburger } from '@/components/Header/Hamburger';
 import { NavBar } from '@/components/Header/NavBar';
 import { useState } from 'react';
 
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
