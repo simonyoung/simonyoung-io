@@ -8,10 +8,10 @@ type MetaProps = {
 export const PostMeta: FunctionComponent<MetaProps> = ({ date }) => (
   <>
     <div className="w-max-content mx-auto">
-      <p className="align-items inline-block px-2 py-0 text-base leading-6 ml-2 uppercase font-medium text-gray-300">
+      <p className="align-items inline-block px-2 py-0 text-base leading-6 ml-2 uppercase font-medium text-logo-light">
         By Simon Young
       </p>
-      <p className="align-items inline-block px-2 text-gray-300">
+      <p className="align-items inline-block px-2 text-logo-light">
         <svg
           className="h-6 w-6 my-2 relative inline-block"
           xmlns="http://www.w3.org/2000/svg"

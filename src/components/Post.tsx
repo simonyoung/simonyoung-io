@@ -21,7 +21,7 @@ export const Post: FunctionComponent<PostProps> = ({
   isPreview,
 }) => (
   <>
-    <div className="relative px-4 sm:px-6 lg:px-8">
+    <div className="relative py-8 px-4 sm:px-6 lg:px-8">
       <div className="text-lg max-w-prose mx-auto ">
         <PostTitle title={post_title} slug={slug} />
         <PostMeta date={publish_date} />
