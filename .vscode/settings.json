@@ -23,9 +23,6 @@
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
-  "gitlens.advanced.messages": {
-    "suppressShowKeyBindingsNotice": true
-  },
   "javascript.validate.enable": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "prettier.singleQuote": true,

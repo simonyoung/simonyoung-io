@@ -1,26 +1,21 @@
-import Link from 'next/link';
-
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 const Headline = () => {
   return (
     <>
       <main className="max-w-screen-xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 md:block sm:text-5xl sm:leading-none md:text-6xl">
-            Hello, I'm
+          <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-logo-light md:block sm:text-5xl sm:leading-none md:text-6xl">
+            Hello, I&apos;m
             <br className="xl:hidden" />
-            <span className="text-gray-400"> Simon Young</span>.
+            <span className="text-logo-mid"> Simon Young</span>.
           </h2>
-          <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-            I'm a software engineering leader based in London.
-            <br /> Sometimes I <a href="#">speak at conferences</a>. I'm also a{' '}
-            <a href="#">photographer</a>.
+          <p className="mt-3 max-w-md mx-auto text-base text-logo-light sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+            I am a software engineering leader based in London
+            <br /> and currently working at the LEGO Group.
           </p>
         </div>
         <div className="mt-8 flex justify-center">
-          <a
-            href="https://github.com/simonyoung"
-            className="text-gray-400 hover:text-gray-500"
-          >
+          <a href="https://github.com/simonyoung" className="text-logo-light hover:text-logo-mid">
             <span className="sr-only">GitHub</span>
             <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
               <path
@@ -32,7 +27,7 @@ const Headline = () => {
           </a>
           <a
             href="https://twitter.com/simon180"
-            className="ml-6 text-gray-400 hover:text-gray-500"
+            className="ml-6 text-logo-light hover:text-logo-mid"
           >
             <span className="sr-only">Twitter</span>
             <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -41,7 +36,7 @@ const Headline = () => {
           </a>
           <a
             href="https://instagram.com/simonyoungphotos"
-            className="ml-6 text-gray-400 hover:text-gray-500"
+            className="ml-6 text-logo-light hover:text-logo-mid"
           >
             <span className="sr-only">Instagram</span>
             <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">

@@ -4,33 +4,56 @@
   "main": "index.js",
   "author": "Simon Young <simon180@mac.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "type-check": "tsc --project tsconfig.json --pretty --noEmit",
+    "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx --fix"
+  },
   "dependencies": {
-    "@tailwindcss/typography": "^0.3.1",
+    "@next/bundle-analyzer": "^10.0.7",
+    "@tailwindcss/typography": "^0.4.0",
     "@tailwindcss/ui": "^0.7.2",
     "@tailwindui/react": "^0.1.1",
     "autoprefixer": "^10.0.2",
-    "contentful": "^7.14.13",
-    "moment": "^2.29.1",
-    "next": "^10.0.2",
+    "contentful": "^8.1.7",
+    "dayjs": "^1.10.4",
+    "dotenv": "^8.2.0",
+    "next": "^10.0.7",
+    "next-seo": "^4.17.0",
     "postcss": "^8.1.7",
     "postcss-nested": "^5.0.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-markdown": "^5.0.2",
-    "react-moment": "^1.0.0",
     "react-transition-group": "^4.4.1",
     "tailwindcss": "^2.0.1"
   },
-  "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "devDependencies": {
-    "eslint": "6.8.0",
-    "eslint-config-prettier": "6.11.0",
-    "eslint-plugin-react": "^7.20.0",
-    "prettier": "^2.1.0"
+    "@types/node": "^14.14.14",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.11.0",
+    "@typescript-eslint/parser": "^4.11.0",
+    "eslint": "^7.16.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.3.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^4.3.6",
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.1.0",
+    "typescript": "^4.1.3"
   }
 }

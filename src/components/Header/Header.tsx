@@ -1,18 +1,9 @@
-import Link from 'next/link';
-import Logo from 'components/Logo';
-import Hamburger from 'components/Hamburger';
-import NavBar from 'components/NavBar';
-import { Transition } from '@tailwindui/react';
+import { Logo } from '@/components/Header/Logo';
+import { Hamburger } from '@/components/Header/Hamburger';
+import { NavBar } from '@/components/Header/NavBar';
 import { useState } from 'react';
 
-const NavLink = (props) => (
-  <Link href={`/${props.url}`}>
-    <a className="font-medium text-gray-500 hover:text-gray-700">
-      {props.title}
-    </a>
-  </Link>
-);
-
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
