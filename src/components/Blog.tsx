@@ -39,23 +39,3 @@ const Blog = ({ posts }: Props) => {
 };
 
 export default Blog;
-
-/*
-<div>
-  <p className="text-sm leading-5 text-gray-500">
-    <Moment date={publish_date} format="DD MMM YYYY" />
-  </p>
-  <h3 className="mt-2 text-xl leading-7 font-semibold text-gray-900">
-    <Link href={`/blog/${slug}`}>{post_title}</Link>
-  </h3>
-  <p className="mt-3 text-base leading-6 text-gray-500">{content_preview}</p>
-  <div className="mt-3">
-    <a
-      href="x"
-      className="text-base leading-6 font-semibold text-indigo-600 hover:text-indigo-500 transition ease-in-out duration-150"
-    >
-      Read more
-    </a>
-  </div>
-</div>;
-*/

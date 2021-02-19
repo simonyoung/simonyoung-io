@@ -1,5 +1,5 @@
 import { FunctionComponent } from 'react';
-import Moment from 'react-moment';
+import dayjs from 'dayjs';
 
 type MetaProps = {
   date: string;
@@ -26,11 +26,9 @@ export const PostMeta: FunctionComponent<MetaProps> = ({ date }) => (
             d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
           />
         </svg>
-        <Moment
-          date={date}
-          format="DD MMM YYYY"
-          className="text-base leading-6 ml-2 uppercase font-medium inline-block"
-        />
+        <div className="text-base leading-6 ml-2 uppercase font-medium inline-block">
+          {dayjs(date).format('DD MMM YYYY')}
+        </div>
       </p>
     </div>
   </>

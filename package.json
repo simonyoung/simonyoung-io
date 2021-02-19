@@ -12,13 +12,14 @@
     "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx --fix"
   },
   "dependencies": {
+    "@next/bundle-analyzer": "^10.0.7",
     "@tailwindcss/typography": "^0.4.0",
     "@tailwindcss/ui": "^0.7.2",
     "@tailwindui/react": "^0.1.1",
     "autoprefixer": "^10.0.2",
     "contentful": "^8.1.7",
+    "dayjs": "^1.10.4",
     "dotenv": "^8.2.0",
-    "moment": "^2.29.1",
     "next": "^10.0.7",
     "next-seo": "^4.17.0",
     "postcss": "^8.1.7",
@@ -26,7 +27,6 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-markdown": "^5.0.2",
-    "react-moment": "^1.0.0",
     "react-transition-group": "^4.4.1",
     "tailwindcss": "^2.0.1"
   },
