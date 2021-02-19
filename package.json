@@ -19,7 +19,7 @@
     "contentful": "^8.1.7",
     "dotenv": "^8.2.0",
     "moment": "^2.29.1",
-    "next": "latest",
+    "next": "^10.0.7",
     "next-seo": "^4.17.0",
     "postcss": "^8.1.7",
     "postcss-nested": "^5.0.1",
