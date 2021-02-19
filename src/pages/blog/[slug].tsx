@@ -1,16 +1,17 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { GetStaticProps, GetStaticPaths } from 'next';
 import { requestPosts } from '@/services/contentful';
 import Error from '@/components/Error';
 import { Post } from '@/components/Post';
-import { IPost } from 'interfaces';
+// import { IPost } from 'interfaces';
 
-type Props = {
-  post?: IPost[];
-  errors?: string;
-};
+// type Props = {
+//   post?: IPost[];
+//   errors?: string;
+// };
 
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-const PostBySlug = ({ post, errors }: Props) => {
+const PostBySlug = ({ post, errors }) => {
   if (errors) return <Error errors={errors} />;
 
   return post && <Post {...post} />;

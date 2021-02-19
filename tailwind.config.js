@@ -27,6 +27,10 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
+            blockquote: {
+              color: theme('colors.logo.light'),
+              background: theme('colors.logo.darkest'),
+            },
             h2: {
               color: theme('colors.logo.mid'),
             },

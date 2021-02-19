@@ -1,13 +1,4 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-/*
-import Link from 'next/link';
-import { NextSeo } from 'next-seo';
-import Headline from 'components/Headline';
-import PostTitle from 'components/PostTitle';
-import PostMeta from 'components/PostMeta';
-import PostContent from 'components/PostContent';
-*/
-
 import Headline from '@/components/Headline';
 import { Post } from '@/components/Post';
 import { IPost } from 'interfaces';
@@ -30,11 +21,11 @@ const Posts = ({ posts }: Props) => {
         }}
       />
       <Headline />
-      <div className="max-w-screen-xl mx-auto relative pb-4 overflow-hidden">
+      <div className="max-w-screen-xl mx-auto relative pb-4 overflow-hidden divide-y divide-logo-dark divide-dotted">
         {posts.map((post: any, index: number) => {
           return (
             <div key={index}>
-              <Post isPreview={isPreview} {...post} />;
+              <Post isPreview={isPreview} {...post} />
             </div>
           );
         })}

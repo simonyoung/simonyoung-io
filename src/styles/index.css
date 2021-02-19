@@ -24,4 +24,18 @@
   .prose h2 {
     @apply tracking-tighter;
   }
+
+  hr {
+    display: block;
+    margin: 0;
+    padding: 24px 0;
+    border: 0;
+    text-align: center;
+  }
+
+  hr:before {
+    content: '\2022 \2022 \2022';
+    font-size: 50px;
+    color: #4f8bca;
+  }
 }
