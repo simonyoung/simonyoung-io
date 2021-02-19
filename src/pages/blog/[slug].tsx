@@ -3,7 +3,7 @@ import { GetStaticProps, GetStaticPaths } from 'next';
 import { requestPosts } from '@/services/contentful';
 import Error from '@/components/Error';
 import { Post } from '@/components/Post';
-// import { IPost } from 'interfaces';
+// / import { IPost } from 'interfaces';
 
 // type Props = {
 //   post?: IPost[];
