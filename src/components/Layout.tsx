@@ -8,7 +8,7 @@ type LayoutProps = {};
 
 export const Layout: FunctionComponent<LayoutProps> = ({ children }) => (
   <>
-    <div className="divide-y divide-gray-200 border-gray-600 border-t-8">
+    <div className="divide-y divide-gray-200 border-logo-dark border-t-8">
       <Head>
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       </Head>
