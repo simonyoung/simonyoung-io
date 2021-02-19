@@ -48,6 +48,6 @@ module.exports = {
       }),
     },
   },
-  purge: ['./src/**/*.js'],
+  purge: ['./src/**/*.tsx'],
   plugins: [require('@tailwindcss/ui'), require('@tailwindcss/typography')],
 };
