@@ -2,7 +2,7 @@
 const Headline = () => {
   return (
     <>
-      <main className="max-w-screen-xl mx-auto py-8 px-4">
+      <main className="max-w-screen-xl mx-auto pt-8 px-4">
         <div className="text-center">
           <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-logo-light">
             Hello, I&apos;m

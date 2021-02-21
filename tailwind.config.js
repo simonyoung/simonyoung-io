@@ -2,9 +2,12 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
+  darkMode: 'media',
   future: {
     removeDeprecatedGapUtilities: true,
   },
+  purge: ['./src/**/*.tsx'],
+  plugins: [require('@tailwindcss/ui'), require('@tailwindcss/typography')],
   theme: {
     extend: {
       colors: {
@@ -48,6 +51,4 @@ module.exports = {
       }),
     },
   },
-  purge: ['./src/**/*.tsx'],
-  plugins: [require('@tailwindcss/ui'), require('@tailwindcss/typography')],
 };
