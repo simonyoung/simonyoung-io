@@ -1,6 +1,6 @@
 import { GetStaticProps } from 'next';
 import { requestPosts } from '@/services/contentful';
-import Blog from '@/components/Blog';
+import BlogPage from '@/components/BlogPage';
 import { IPost } from 'interfaces';
 
 type Props = {
@@ -8,8 +8,8 @@ type Props = {
 };
 
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-const BlogPage = ({ posts }: Props) => {
-  return <Blog posts={posts} />;
+const Blog = ({ posts }: Props) => {
+  return <BlogPage posts={posts} />;
 };
 
 export const getStaticProps: GetStaticProps = async () => {
@@ -22,4 +22,4 @@ export const getStaticProps: GetStaticProps = async () => {
   };
 };
 
-export default BlogPage;
+export default Blog;

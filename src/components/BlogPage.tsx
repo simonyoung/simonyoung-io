@@ -7,7 +7,7 @@ type Props = {
 };
 
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-const Blog = ({ posts }: Props) => {
+const BlogPage = ({ posts }: Props) => {
   const isPreview = true;
   return (
     <>
@@ -36,4 +36,4 @@ const Blog = ({ posts }: Props) => {
   );
 };
 
-export default Blog;
+export default BlogPage;

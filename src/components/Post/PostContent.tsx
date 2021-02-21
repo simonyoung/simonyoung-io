@@ -16,13 +16,13 @@ export const PostContent: FunctionComponent<ContentProps> = ({
   slug,
 }) => (
   <>
-    <div className="mx-auto w-max-content">
+    <div className="mx-auto">
       {preview && isPreview ? (
         <div>
-          <div className="prose text-logo-light py-4">
+          <div className="mx-auto max-w-none prose text-logo-light py-4">
             <ReactMarkdown source={preview} />
           </div>
-          <p>
+          <p className="mx-auto">
             <Link href={`/blog/${slug}`}>
               <a className="text-logo-mid hover:text-logo-dark underline text-xs uppercase font-light tracking-wider">
                 Read more
@@ -31,7 +31,7 @@ export const PostContent: FunctionComponent<ContentProps> = ({
           </p>
         </div>
       ) : (
-        <div className="prose text-logo-light  py-4">
+        <div className="mx-auto prose text-logo-light  py-4">
           <ReactMarkdown source={content} />
         </div>
       )}
