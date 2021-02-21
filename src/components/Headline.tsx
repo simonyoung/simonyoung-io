@@ -4,12 +4,15 @@ const Headline = () => {
     <>
       <main className="max-w-screen-xl mx-auto pt-8 px-4">
         <div className="text-center">
-          <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-logo-light">
+          <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-logo-light md:text-6xl">
             Hello, I&apos;m
-            <br />
+            <br
+              className="md:hidden
+            "
+            />
             <span className="text-logo-mid"> Simon Young</span>.
           </h2>
-          <p className="mt-3 max-w-md mx-auto text-base text-logo-light">
+          <p className="mt-3 max-w-md mx-auto text-base text-logo-light md:text-xl md:max-w-lg md:py-2">
             I am a software engineering leader based in London and currently working at the LEGO
             Group.
           </p>
