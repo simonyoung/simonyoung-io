@@ -13,7 +13,7 @@ export const Layout: FunctionComponent<LayoutProps> = ({ children }) => (
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       </Head>
 
-      <div className="bg-gray-900 relative p-2 px-6">
+      <div className="bg-gray-900 relative p-2 px-4">
         <Header />
         {children}
         <Footer />
