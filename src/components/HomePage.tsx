@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import Headline from '@/components/Headline';
-import { Post } from '@/components/Post';
+import { Post } from '@/components/Post/Post';
 import { IPost } from 'interfaces';
 import { NextSeo } from 'next-seo';
 
