@@ -16,7 +16,7 @@ export const PostContent: FunctionComponent<ContentProps> = ({
   slug,
 }) => (
   <>
-    <div className="prose text-logo-light">
+    <div className="prose text-logo-light mx-auto">
       <div>
         {preview && isPreview ? (
           <div>

@@ -14,9 +14,11 @@ const Blog = ({ posts }: Props) => {
       <div className="max-w-screen-xl mx-auto py-8 px-4">
         <div className="relative max-w-lg mx-auto">
           <div>
-            <h2 className="text-3xl leading-9 tracking-tight font-extrabold text-gray-900">Blog</h2>
+            <h2 className="text-3xl text-center leading-9 tracking-tight font-extrabold text-logo-mid">
+              Blog
+            </h2>
             <div className="mt-3">
-              <p className="text-xl leading-7 text-gray-500">
+              <p className="text-base text-center leading-7 text-logo-light">
                 Full length articles on engineering management, technology and leadership.
               </p>
             </div>
@@ -25,7 +27,7 @@ const Blog = ({ posts }: Props) => {
             {posts.map((post: any, index: number) => {
               return (
                 <div key={index}>
-                  <Post isPreview={isPreview} key={index} {...post} />;
+                  <Post isPreview={isPreview} key={index} {...post} />
                 </div>
               );
             })}
