@@ -4,7 +4,7 @@ import { ReactElement } from 'react';
 export const Logo: React.FC = (): ReactElement => {
   return (
     <>
-      <div className="flex order-none w-1/5  items-center text-gray-900 justify-center mb-0">
+      <div className="flex order-none w-1/5 items-center text-gray-900 justify-center mb-0">
         <Link href="/">
           <a>
             <svg
@@ -12,8 +12,8 @@ export const Logo: React.FC = (): ReactElement => {
               preserveAspectRatio="none"
               x="0px"
               y="0px"
-              width="112px"
-              height="130px"
+              width="84px"
+              height="98px"
               viewBox="0 0 112 130"
             >
               <defs>

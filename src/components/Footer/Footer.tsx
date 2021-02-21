@@ -1,8 +1,8 @@
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 const Footer = () => {
   return (
-    <footer className="max-w-screen-xl mx-auto py-8 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
-      <div className="flex justify-center md:order-2">
+    <footer className="max-w-screen-xl mx-auto pb-8 px-4">
+      <div className="flex justify-center">
         <a href="https://github.com/simonyoung" className="text-logo-light hover:text-logo-mid">
           <span className="sr-only">GitHub</span>
           <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -35,8 +35,8 @@ const Footer = () => {
           </svg>
         </a>
       </div>
-      <div className="mt-8 md:mt-0 md:order-1">
-        <p className="text-center text-base leading-6 text-logo-light">
+      <div className="mt-8">
+        <p className="text-center text-sm leading-6 text-logo-light">
           &copy; {new Date().getFullYear()}
           {' Simon Young.'}
         </p>

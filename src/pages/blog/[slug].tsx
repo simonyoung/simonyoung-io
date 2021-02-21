@@ -2,7 +2,7 @@
 import { GetStaticProps, GetStaticPaths } from 'next';
 import { requestPosts } from '@/services/contentful';
 import Error from '@/components/Error';
-import { Post } from '@/components/Post';
+import PostPage from '@/components/PostPage';
 // / import { IPost } from 'interfaces';
 
 // type Props = {
@@ -14,7 +14,7 @@ import { Post } from '@/components/Post';
 const PostBySlug = ({ post, errors }) => {
   if (errors) return <Error errors={errors} />;
 
-  return post && <Post {...post} />;
+  return <PostPage post={post} />;
 };
 
 export default PostBySlug;
@@ -42,6 +42,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       props: {
         post: post[0],
       },
+      revalidate: 1,
     };
   } catch (err) {
     return {
