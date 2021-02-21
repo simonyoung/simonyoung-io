@@ -10,8 +10,8 @@ const Headline = () => {
             <span className="text-logo-mid"> Simon Young</span>.
           </h2>
           <p className="mt-3 max-w-md mx-auto text-base text-logo-light">
-            I am a software engineering leader based in London
-            <br /> and currently working at the LEGO Group.
+            I am a software engineering leader based in London and currently working at the LEGO
+            Group.
           </p>
         </div>
         <div className="mt-8 flex justify-center">

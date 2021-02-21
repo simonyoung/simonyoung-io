@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-//import Headline from '@/components/Headline';
+import Headline from '@/components/Headline';
 import { Post } from '@/components/Post';
 import { IPost } from 'interfaces';
 import { NextSeo } from 'next-seo';
@@ -20,7 +20,7 @@ const Posts = ({ posts }: Props) => {
           description: 'homepage; a list of posts',
         }}
       />
-
+      <Headline />
       <div className="max-w-screen-xl mx-auto relative overflow-hidden divide-y divide-logo-dark divide-dotted ">
         {posts.map((post: any, index: number) => {
           return (
