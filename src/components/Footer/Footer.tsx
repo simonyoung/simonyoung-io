@@ -1,7 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 const Footer = () => {
   return (
-    <footer className="max-w-screen-xl mx-auto py-8 px-4">
+    <footer className="max-w-screen-xl mx-auto pb-8 px-4">
       <div className="flex justify-center">
         <a href="https://github.com/simonyoung" className="text-logo-light hover:text-logo-mid">
           <span className="sr-only">GitHub</span>
