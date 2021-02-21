@@ -19,19 +19,19 @@ export const PostContent: FunctionComponent<ContentProps> = ({
     <div className="mx-auto">
       {preview && isPreview ? (
         <div>
-          <div className="mx-auto max-w-none prose text-logo-light py-4">
+          <div className="mx-auto max-w-none prose md:prose-lg text-logo-light md:text-logo-light py-4">
             <ReactMarkdown source={preview} />
           </div>
           <p className="mx-auto">
             <Link href={`/blog/${slug}`}>
-              <a className="text-logo-mid hover:text-logo-dark underline text-xs uppercase font-light tracking-wider">
+              <a className="text-logo-mid hover:text-logo-dark underline text-xs uppercase font-light tracking-wider md:text-sm">
                 Read more
               </a>
             </Link>
           </p>
         </div>
       ) : (
-        <div className="mx-auto prose text-logo-light  py-4">
+        <div className="mx-auto prose md:prose-lg text-logo-light md:text-logo-light py-4">
           <ReactMarkdown source={content} />
         </div>
       )}
