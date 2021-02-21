@@ -12,8 +12,8 @@ export const Logo: React.FC = (): ReactElement => {
               preserveAspectRatio="none"
               x="0px"
               y="0px"
-              width="112px"
-              height="130px"
+              width="84px"
+              height="98px"
               viewBox="0 0 112 130"
             >
               <defs>
