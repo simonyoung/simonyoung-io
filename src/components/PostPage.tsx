@@ -10,7 +10,6 @@ import { NextSeo } from 'next-seo';
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 const PostPage = ({ post }) => {
   const isPreview = false;
-  console.log(post.post_title);
   return (
     <>
       <NextSeo

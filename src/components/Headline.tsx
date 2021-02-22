@@ -4,7 +4,7 @@ const Headline = () => {
     <>
       <main className="max-w-screen-xl mx-auto pt-8 px-4">
         <div className="text-center">
-          <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-logo-light md:text-6xl">
+          <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-logo-light md:text-5xl">
             Hello, I&apos;m
             <br
               className="md:hidden
