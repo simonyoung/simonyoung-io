@@ -13,7 +13,7 @@ const BlogPage = ({ posts }: Props) => {
     <>
       <div className="max-w-screen-xl mx-auto relative overflow-hidden py-8 px-4">
         <div>
-          <h2 className="text-3xl text-center leading-9 tracking-tight font-extrabold text-logo-mid">
+          <h2 className="text-3xl text-center leading-9 tracking-tight font-extrabold text-logo-mid md:text-5xl">
             Blog
           </h2>
           <div className="mt-3">
@@ -22,7 +22,7 @@ const BlogPage = ({ posts }: Props) => {
             </p>
           </div>
         </div>
-        <div className="mt-6 grid gap-16 border-t-2 border-solid border-logo-dark pt-10">
+        <div className="mt-10 max-w-screen-xl mx-auto relative overflow-hidden divide-y divide-logo-dark divide-dotted ">
           {posts.map((post: any, index: number) => {
             return (
               <div key={index}>
